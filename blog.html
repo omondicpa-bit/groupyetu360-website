@@ -1,268 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Field Journal — Felix Omondi</title>
-  <meta name="description" content="Reflections on finance, fintech, technology, and the journey from professional to builder." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Crimson+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
-  <style>
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    :root{--ink:#161412;--ink-soft:#42403c;--ink-faint:#7a776f;--cream:#faf7f2;--paper:#f3ede3;--rule:#d8d0c0;--gold:#a07830;--gold-lt:#c49a48;--teal:#1a5c5a;--teal-lt:#267a78;--teal-pale:#e0f0ef;--white:#ffffff}
-    html{scroll-behavior:smooth}
-    body{font-family:"Crimson Pro",Georgia,serif;background:var(--cream);color:var(--ink);line-height:1.75;font-size:18px}
-    ::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:var(--cream)}::-webkit-scrollbar-thumb{background:var(--gold);border-radius:2px}
-    nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(250,247,242,.95);backdrop-filter:blur(16px);border-bottom:1px solid var(--rule);display:flex;align-items:center;justify-content:space-between;padding:0 3.5rem;height:62px}
-    .nav-brand{font-family:"Cormorant Garamond",serif;font-size:1.3rem;font-weight:600;color:var(--ink);text-decoration:none}
-    .nav-brand span{color:var(--gold)}
-    .nav-links{display:flex;gap:2rem;list-style:none;align-items:center}
-    .nav-links a{font-family:"DM Mono",monospace;font-size:.68rem;color:var(--ink-soft);text-decoration:none;letter-spacing:.1em;text-transform:uppercase;transition:color .2s}
-    .nav-links a:hover{color:var(--gold)}
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Blog — GroupYetu360 | Guides for Running Kenyan Community Groups</title>
+<meta name="description" content="Practical guides on starting and running chamas, welfare groups, investment clubs, table banking circles and SACCOs in Kenya — from the team behind GroupYetu360."/>
+<meta name="keywords" content="chama blog, community group guides Kenya, welfare group tips, investment club Kenya, table banking guide, SACCO Kenya"/>
+<meta name="author" content="EPH Technologies Limited"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://groupyetu.org/blog.html"/>
+<meta property="og:title" content="Blog — GroupYetu360"/>
+<meta property="og:description" content="Practical guides for running chamas, welfare groups, investment clubs and SACCOs in Kenya."/>
+<meta property="og:url" content="https://groupyetu.org/blog.html"/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="https://groupyetu.org/feature-graphic.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://groupyetu.org/feature-graphic.png"/>
+<link rel="icon" href="https://app.groupyetu.org/favicon32x32.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+:root{
+  --maroon:#800020;--maroon-dk:#5a0016;--maroon-lt:#a0002a;--maroon-pale:#fdf0f3;--maroon-muted:#e08898;
+  --teal:#0f6e56;--teal-dk:#085041;--teal-lt:#1d9e75;--teal-pale:#e1f5ee;--teal-mid:#9fe1cb;
+  --gold:#c49a30;--gold-lt:#e0b84a;--gold-pale:#fdf5e0;
+  --ink:#1a1a1a;--ink-soft:#3d3d3d;--ink-faint:#6b7280;
+  --surface:#fff;--surface-2:#f6faf8;--surface-3:#ecf5f0;--border:#d8ece4;--border-soft:#e8f0eb;
+  --r:8px;--r-lg:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:var(--ink);background:#fff;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
 
-    /* JOURNAL HEADER */
-    .journal-header{padding:10rem 0 5rem;background:var(--ink);text-align:center;position:relative;overflow:hidden}
-    .journal-header::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 60%,rgba(160,120,48,.12) 0%,transparent 70%)}
-    .journal-eyebrow{font-family:"DM Mono",monospace;font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem;display:flex;align-items:center;justify-content:center;gap:.75rem}
-    .journal-eyebrow::before,.journal-eyebrow::after{content:"";display:inline-block;width:32px;height:1px;background:var(--gold)}
-    .journal-title{font-family:"Cormorant Garamond",serif;font-size:clamp(2.5rem,5vw,4rem);font-weight:600;color:var(--cream);margin-bottom:1rem;letter-spacing:-.01em}
-    .journal-desc{font-size:1.05rem;color:rgba(250,247,242,.5);max-width:44ch;margin:0 auto;font-weight:300;line-height:1.8}
+nav#nav{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:1rem 4rem;background:#fff;border-bottom:1px solid var(--border)}
+.nb{display:flex;align-items:center;gap:.55rem}
+.nb-name{font-family:'Crimson Pro',serif;font-size:1.45rem;font-weight:700;color:var(--maroon)}
+.nb-name span{color:var(--gold)}
+.nl{display:flex;align-items:center;gap:1.9rem}
+.nl a{font-size:.86rem;font-weight:500;color:var(--ink-soft);transition:color .15s}
+.nl a:hover{color:var(--teal)}
+.nl a.active{color:var(--teal);font-weight:700}
+.nl-cta{background:var(--teal);color:#fff!important;padding:.42rem 1.1rem;border-radius:99px;font-weight:600!important;box-shadow:0 2px 10px rgba(15,110,86,.3)}
+.nl-cta:hover{background:var(--teal-lt)!important}
+.nav-mob{display:none;background:none;border:none;font-size:1.4rem;color:var(--maroon);cursor:pointer}
+@media(max-width:860px){nav#nav{padding:.9rem 1.2rem}.nl{display:none}.nl.open{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:#fff;padding:1.2rem;border-bottom:1px solid var(--border);gap:1rem}.nav-mob{display:block}}
 
-    /* POST LIST */
-    .post-list{max-width:820px;margin:0 auto;padding:5rem 2rem}
-    .post-entry{border-bottom:1px solid var(--rule);padding:3.5rem 0;cursor:pointer}
-    .post-entry:first-child{border-top:1px solid var(--rule)}
-    .post-entry:hover .post-entry-title{color:var(--teal)}
-    .post-entry-meta{display:flex;align-items:center;gap:1.5rem;margin-bottom:1rem}
-    .post-entry-cat{font-family:"DM Mono",monospace;font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--teal)}
-    .post-entry-date{font-family:"DM Mono",monospace;font-size:.62rem;letter-spacing:.1em;color:var(--ink-faint)}
-    .post-entry-title{font-family:"Cormorant Garamond",serif;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:600;line-height:1.2;color:var(--ink);margin-bottom:.75rem;transition:color .2s;letter-spacing:-.01em}
-    .post-entry-excerpt{font-size:1rem;color:var(--ink-soft);line-height:1.75;font-weight:300;max-width:60ch;margin-bottom:1.25rem}
-    .post-entry-link{font-family:"DM Mono",monospace;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);text-decoration:none}
-    .post-entry-link:hover{color:var(--gold)}
+.blog-hero{background:linear-gradient(135deg,var(--maroon-dk),var(--maroon));padding:3.2rem 1.5rem 2.8rem;text-align:center}
+.bh-tag{font-size:.68rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-lt);margin-bottom:.9rem}
+.bh-title{font-family:'Crimson Pro',serif;font-size:2.4rem;font-weight:700;color:#fff;margin-bottom:.9rem}
+.bh-sub{font-size:1rem;color:rgba(255,255,255,.82);max-width:560px;margin:0 auto;line-height:1.6}
 
-    /* ARTICLE */
-    .article-wrap{display:none;max-width:720px;margin:0 auto;padding:5rem 2rem 6rem}
-    .article-wrap.active{display:block}
-    .article-back{font-family:"DM Mono",monospace;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);text-decoration:none;display:inline-flex;align-items:center;gap:.5rem;margin-bottom:3rem;transition:color .2s}
-    .article-back:hover{color:var(--gold)}
-    .article-cat{font-family:"DM Mono",monospace;font-size:.65rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:.75rem;display:flex;align-items:center;gap:.6rem}
-    .article-cat::before{content:"";display:inline-block;width:20px;height:1px;background:var(--gold)}
-    .article-title{font-family:"Cormorant Garamond",serif;font-size:clamp(2rem,4vw,3rem);font-weight:600;line-height:1.15;color:var(--ink);margin-bottom:1rem;letter-spacing:-.01em}
-    .article-byline{font-family:"DM Mono",monospace;font-size:.65rem;letter-spacing:.1em;color:var(--ink-faint);margin-bottom:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid var(--rule)}
-    .article-body{font-size:1.08rem;color:var(--ink-soft);line-height:1.9;font-weight:300}
-    .article-body p{margin-bottom:1.75rem}
-    .article-body p:last-child{margin-bottom:0}
-    .article-body h2{font-family:"Cormorant Garamond",serif;font-size:1.6rem;font-weight:600;color:var(--ink);margin:2.5rem 0 1rem;line-height:1.2}
-    .article-body h3{font-family:"Cormorant Garamond",serif;font-size:1.25rem;font-weight:600;font-style:italic;color:var(--teal);margin:2rem 0 .75rem}
-    .article-body strong{color:var(--ink);font-weight:500}
-    .article-body em{font-style:italic;color:var(--ink)}
-    .article-body blockquote{border-left:3px solid var(--gold);padding:.75rem 0 .75rem 1.75rem;margin:2rem 0;font-family:"Cormorant Garamond",serif;font-size:1.2rem;font-style:italic;color:var(--ink-soft);line-height:1.65}
-    .article-footer{margin-top:4rem;padding-top:2rem;border-top:1px solid var(--rule);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
-    .article-author{display:flex;flex-direction:column;gap:.25rem}
-    .article-author-name{font-family:"Cormorant Garamond",serif;font-size:1.05rem;font-weight:600;color:var(--ink)}
-    .article-author-bio{font-family:"DM Mono",monospace;font-size:.62rem;letter-spacing:.08em;color:var(--ink-faint)}
-    .btn-back{font-family:"DM Mono",monospace;font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;padding:.65rem 1.5rem;border:1px solid var(--rule);color:var(--ink-soft);text-decoration:none;transition:all .2s;cursor:pointer;background:transparent}
-    .btn-back:hover{border-color:var(--teal);color:var(--teal)}
+.blog-wrap{max-width:1000px;margin:0 auto;padding:3rem 1.5rem 4rem}
+.blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.6rem}
+.post-card{border:1px solid var(--border);border-radius:var(--r-lg);overflow:hidden;background:#fff;transition:box-shadow .2s,transform .2s;display:flex;flex-direction:column}
+.post-card:hover{box-shadow:0 10px 30px rgba(0,0,0,.08);transform:translateY(-3px)}
+.pc-tag{background:var(--teal-pale);color:var(--teal-dk);font-size:.66rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:.35rem .9rem;display:inline-block;margin:1.1rem 1.1rem 0}
+.pc-body{padding:.7rem 1.1rem 1.3rem;flex:1;display:flex;flex-direction:column}
+.pc-title{font-family:'Crimson Pro',serif;font-size:1.28rem;font-weight:700;color:var(--ink);line-height:1.3;margin-bottom:.6rem}
+.pc-excerpt{font-size:.87rem;color:var(--ink-faint);line-height:1.6;margin-bottom:1rem;flex:1}
+.pc-meta{font-size:.72rem;color:var(--ink-faint);display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--border-soft);padding-top:.8rem}
+.pc-read{color:var(--teal);font-weight:700}
 
-    footer{background:var(--ink);color:rgba(250,247,242,.35);padding:2.5rem 3.5rem;display:flex;align-items:center;justify-content:space-between;font-family:"DM Mono",monospace;font-size:.63rem;letter-spacing:.1em}
-    footer span{color:var(--gold)}
-    .footer-links{display:flex;gap:2rem}
-    .footer-links a{color:rgba(250,247,242,.35);text-decoration:none;transition:color .2s}
-    .footer-links a:hover{color:var(--gold)}
+.blog-empty{text-align:center;padding:3rem 1rem;color:var(--ink-faint);font-size:.9rem}
 
-    @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
-    .fade-in{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}
-    .fade-in.visible{opacity:1;transform:translateY(0)}
-    @media(max-width:768px){nav{padding:0 1.5rem}.nav-links{gap:1.25rem}.post-list,.article-wrap{padding:3rem 1.5rem}footer{flex-direction:column;gap:1rem;text-align:center}}
-  </style>
+footer{background:var(--maroon-dk);padding:3.5rem 1.5rem 2rem}
+.fi{max-width:1180px;margin:0 auto}
+.ft-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:2.5rem;margin-bottom:2.2rem}
+.fb-name{font-family:'Crimson Pro',serif;font-size:1.5rem;font-weight:700;color:#fff}
+.fb-name span{color:var(--gold-lt)}
+.fb-tagline{font-size:.78rem;color:var(--gold-lt);margin:.3rem 0 .9rem}
+.fb-desc{font-size:.84rem;color:rgba(255,255,255,.65);line-height:1.65;margin-bottom:1rem}
+.fb-contact{display:flex;flex-direction:column;gap:.4rem}
+.fb-contact a{font-size:.8rem;color:rgba(255,255,255,.75)}
+.fc-title{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-lt);margin-bottom:.9rem}
+.fl{display:flex;flex-direction:column;gap:.6rem}
+.fl a{font-size:.82rem;color:rgba(255,255,255,.65)}
+.fl a:hover{color:#fff}
+.fb-bottom{border-top:1px solid rgba(255,255,255,.12);padding-top:1.4rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem}
+.fb-bottom-l,.fb-bottom-r{font-size:.75rem;color:rgba(255,255,255,.5)}
+.fb-bottom-r{display:flex;gap:1.2rem}
+.fb-bottom-r a:hover{color:#fff}
+@media(max-width:760px){.ft-grid{grid-template-columns:1fr 1fr}.bh-title{font-size:1.9rem}}
+</style>
 </head>
 <body>
 
-<nav>
-  <a href="index.html" class="nav-brand">Felix <span>Omondi</span></a>
-  <ul class="nav-links">
-    <li><a href="index.html#about">About</a></li>
-    <li><a href="index.html#experience">Experience</a></li>
-    <li><a href="index.html#contact">Contact</a></li>
-    <li><a href="FELIX_OMONDI_CV.pdf" target="_blank" style="padding:.4rem 1rem;border:1px solid var(--gold);color:var(--gold)!important">&#8595; CV</a></li>
-  </ul>
+<nav id="nav">
+  <a href="/" class="nb">
+    <svg width="32" height="28" viewBox="0 0 80 80" fill="none"><circle cx="30" cy="28" r="24" stroke="#c49a30" stroke-width="1.8" fill="rgba(196,154,48,.08)"/><circle cx="50" cy="28" r="24" stroke="#c49a30" stroke-width="1.8" fill="rgba(196,154,48,.08)"/><circle cx="40" cy="50" r="24" stroke="#1d9e75" stroke-width="1.8" fill="rgba(15,110,86,.08)"/><circle cx="40" cy="36" r="6" fill="#1d9e75"/><circle cx="40" cy="36" r="3" fill="#9fe1cb"/></svg>
+    <div class="nb-name">GroupYetu<span>360</span></div>
+  </a>
+  <div class="nl" id="nl">
+    <a href="/#features">Features</a>
+    <a href="/#for-who">Who It's For</a>
+    <a href="/#pricing">Pricing</a>
+    <a href="blog.html" class="active">Blog</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="mailto:info@groupyetu.org">Contact</a>
+    <a href="https://app.groupyetu.org" class="nl-cta">Sign In →</a>
+  </div>
+  <button class="nav-mob" onclick="document.getElementById('nl').classList.toggle('open')" aria-label="Menu">☰</button>
 </nav>
 
-<!-- JOURNAL HEADER -->
-<div class="journal-header">
-  <p class="journal-eyebrow">Writing</p>
-  <h1 class="journal-title">Field Journal</h1>
-  <p class="journal-desc">Reflections on finance, fintech, technology, and the long road from professional to builder.</p>
-</div>
+<section class="blog-hero">
+  <div class="bh-tag">Guides &amp; Resources</div>
+  <h1 class="bh-title">The GroupYetu360 Blog</h1>
+  <p class="bh-sub">Practical, no-fluff guides for running chamas, welfare groups, investment clubs, table banking circles and SACCOs in Kenya.</p>
+</section>
 
-<!-- POST LIST -->
-<div class="post-list" id="post-list">
-
-  <div class="post-entry fade-in" onclick="showPost('post1')">
-    <div class="post-entry-meta">
-      <span class="post-entry-cat">Career &middot; Reflection</span>
-      <span class="post-entry-date">June 2026</span>
-    </div>
-    <div class="post-entry-title">Why a Finance Professional Is Learning to Code</div>
-    <div class="post-entry-excerpt">The gap between understanding a system and being able to build one is vast. I spent years on the inside of fintech — watching platforms scale, watching products launch, watching engineers solve in hours what took my team days. Here is why I decided to close that gap.</div>
-    <a class="post-entry-link" onclick="showPost('post1'); return false;" href="#">Read Essay &#8594;</a>
-  </div>
-
-  <div class="post-entry fade-in" onclick="showPost('post2')">
-    <div class="post-entry-meta">
-      <span class="post-entry-cat">Tools &middot; Fintech</span>
-      <span class="post-entry-date">June 2026</span>
-    </div>
-    <div class="post-entry-title">Building an Automated Reconciliation Tool with AI</div>
-    <div class="post-entry-excerpt">Before I wrote a single line of code, I built a working tool. Not with a framework or a tutorial — with reasoning, context, and Claude. What started as a practical shortcut became one of the most clarifying experiences of my transition into technology.</div>
-    <a class="post-entry-link" onclick="showPost('post2'); return false;" href="#">Read Essay &#8594;</a>
-  </div>
-
-</div>
-
-<!-- POST 1 -->
-<div class="article-wrap" id="post1">
-  <a class="article-back" href="#" onclick="showList(); return false;">&#8592; Back to Journal</a>
-  <p class="article-cat">Career &middot; Reflection</p>
-  <h1 class="article-title">Why a Finance Professional Is Learning to Code</h1>
-  <p class="article-byline">By Felix Omondi &nbsp;&middot;&nbsp; June 2026 &nbsp;&middot;&nbsp; 7 min read</p>
-  <div class="article-body">
-
-    <p>There is a particular kind of frustration that comes from understanding a problem completely but lacking the tools to solve it yourself. I have felt it many times — sitting across from a developer, explaining exactly what a financial dashboard needed to do, watching them nod, waiting weeks for a version that was almost right but not quite. The knowledge was mine. The execution was not.</p>
-
-    <p>I have spent over six years working at the intersection of finance and technology. First at Heri Water, where I built the finance department from nothing and helped grow the business to over 140 franchises. Then at Kokotech, where I co-developed two fintech platforms — Kokosend and Kokopay — and managed the financial and operational backbone that kept them running day to day. I understand how these systems work. I understand what they need. What I did not understand, for a long time, was how to build them.</p>
-
-    <blockquote>"The best digital tools are built by people who understand both the human problem and the technical solution. I had spent years mastering one side. It was time to learn the other."</blockquote>
-
-    <h2>The Moment It Became Obvious</h2>
-
-    <p>It was not a single moment. It was an accumulation. Every time a reconciliation process that should have taken ten minutes took three hours because the tool was not built for our specific data structure. Every time I described a report to a developer and received something technically correct but practically useless. Every time I watched a small inefficiency compound itself across hundreds of transactions, knowing exactly how to fix it and having no way to do so without depending on someone else's time and interpretation.</p>
-
-    <p>The fintech world moves fast. Crypto markets do not wait for sprint cycles. When something breaks at 11pm on a Friday — and in fintech, things do break at 11pm on a Friday — the person who can diagnose it, patch it, or at minimum understand what is happening at a code level is worth more than any process document. I wanted to be that person.</p>
-
-    <h2>What Finance Taught Me About Code</h2>
-
-    <p>Here is something I did not expect: my finance background is not a disadvantage in learning to code. It is an asset. Finance is fundamentally about systems — inputs, outputs, rules, exceptions, edge cases, and reconciliation. Every accounting entry has a debit and a credit. Every process has a beginning, a middle, and an end. Every report tells a story if you know how to read it.</p>
-
-    <p>That is also, it turns out, how software works. Functions receive inputs and return outputs. Logic flows through conditions. Data needs to be validated, transformed, and reconciled. The vocabulary is different. The underlying thinking is not.</p>
-
-    <p>I am currently working through FreeCodeCamp's curriculum — Python first, alongside Responsive Web Design. Python because it is the language closest to the kind of work I already do: data, automation, financial logic. Web design because I want to see what I am building, to make things real and visible rather than abstract.</p>
-
-    <h2>Building While Learning</h2>
-
-    <p>One of the best decisions I made early in this journey was to start building before I felt ready. This very website — which you are reading right now — was built before I had completed a single certification. Not by writing every line from scratch, but by working collaboratively with AI tools, reading the code, tweaking it, breaking it, and learning from every mistake.</p>
-
-    <p>I uploaded my first HTML file to GitHub. I connected a custom domain. I configured DNS records and debugged HTTPS certificate errors and renamed files in repositories to fix broken deployments. None of that was in any tutorial. All of it was real. And all of it taught me more in an afternoon than a week of reading documentation would have.</p>
-
-    <p>The welfare association I lead also taught me something important about why this matters beyond personal ambition. Community groups across Kenya — savings groups, welfare associations, investment clubs — are running on WhatsApp messages and Excel sheets. The financial intelligence is there. The operational discipline is there. What is missing is the technology to formalise it, scale it, and make it resilient. I intend to build that. Not eventually. Soon.</p>
-
-    <h2>What I Am Moving Toward</h2>
-
-    <p>My ambition is not to become a developer in the narrow sense — someone who writes code for its own sake. It is to become a builder in the full sense: someone who understands a problem deeply, can design a solution thoughtfully, and has the technical capability to bring it to life without always depending on an intermediary.</p>
-
-    <p>Finance gave me the problem. Fintech showed me the scale. Code is the last tool I need.</p>
-
-    <p>The gap is closing.</p>
-
-  </div>
-  <div class="article-footer">
-    <div class="article-author">
-      <div class="article-author-name">Felix Omondi</div>
-      <div class="article-author-bio">Finance & Business Manager · Kokotech Limited · Nairobi, Kenya</div>
-    </div>
-    <button class="btn-back" onclick="showList()">&#8592; Back to Journal</button>
-  </div>
-</div>
-
-<!-- POST 2 -->
-<div class="article-wrap" id="post2">
-  <a class="article-back" href="#" onclick="showList(); return false;">&#8592; Back to Journal</a>
-  <p class="article-cat">Tools &middot; Fintech</p>
-  <h1 class="article-title">Building an Automated Reconciliation Tool with AI</h1>
-  <p class="article-byline">By Felix Omondi &nbsp;&middot;&nbsp; June 2026 &nbsp;&middot;&nbsp; 6 min read</p>
-  <div class="article-body">
-
-    <p>Every working day at Kokotech, transactions flow across two platforms — Kokosend for fiat exchange and Kokopay for crypto. Money moves. Records are created. And every morning, someone has to reconcile those records: confirming that what the platform says happened matches what the payment providers say happened, to the last shilling.</p>
-
-    <p>For a long time, that someone was me. Armed with Excel, a series of VLOOKUP formulas I had refined over months, and a methodical patience that I suspect comes from years of accounting work, I would work through the morning reconciliation manually. It was accurate. It was thorough. And it took far too long.</p>
-
-    <blockquote>"The process was not broken. It was just slow. And in fintech, slow is a kind of broken."</blockquote>
-
-    <h2>The Problem with Manual Reconciliation</h2>
-
-    <p>The challenge with financial reconciliation is not that it is intellectually difficult. Once you understand the logic — match transaction IDs, flag discrepancies, investigate exceptions, confirm totals — it becomes almost mechanical. The problem is that mechanical work does not scale. As transaction volumes grew, the reconciliation window grew with them. What took forty minutes became ninety. What was a morning task began creeping into the afternoon.</p>
-
-    <p>There was also the question of human error. Not carelessness — I am a CPA finalist with six years of financial controls experience. But sustained, repetitive attention on large datasets is where even careful people make mistakes. A missed row. A mismatched date format. A figure that looks right but sits in the wrong column. Reconciliation errors in fintech are not abstract — they affect real money, real customers, and real trust.</p>
-
-    <h2>What I Built — and How</h2>
-
-    <p>I did not sit down one day and decide to build a reconciliation tool. It happened more gradually than that. I had been exploring AI tools seriously for several months, and I noticed that the same reasoning I applied to reconciliation — compare this to that, flag this pattern, surface these exceptions — could potentially be expressed as a set of instructions to an AI system.</p>
-
-    <p>Working with Claude, I built what we now call a reconciliation skill: a structured set of instructions that takes our admin exports from Kokosend and Kokopay and compares them against statements from our payment partners — SasaPay, Fingo, Nomba, Moniepoint, and Squad. The skill handles multiple currencies: KES, NGN, and ZAR. It runs deposit reconciliation and payout reconciliation. It applies a Monday rule that automatically covers the Friday-Saturday-Sunday period. It flags discrepancies, surfaces missing transactions, and produces a clean summary.</p>
-
-    <p>What took me ninety minutes now takes minutes. What required sustained manual attention now runs systematically. And because the logic is explicit and documented, anyone on the team can run it — not just the person who built it.</p>
-
-    <h2>What This Taught Me About Building</h2>
-
-    <p>The most surprising thing about building this tool was how much the process felt like accounting. In accounting, you define the rules first: what constitutes a match, what constitutes an exception, what tolerance is acceptable. Then you apply those rules consistently across every transaction. There is no room for intuition or approximation — the numbers either reconcile or they do not.</p>
-
-    <p>Building the reconciliation skill required exactly the same discipline. I had to articulate rules I had previously held intuitively. I had to think about edge cases — what happens when a transaction appears in one system but not the other? What happens when amounts match but dates differ? What happens on public holidays? Expressing those rules precisely, in a form that a system could follow, was one of the most clarifying exercises I have ever done as a finance professional.</p>
-
-    <p>It also showed me something important about the relationship between domain expertise and technical capability. The reconciliation skill works not because the technology is impressive — it is, but that is not the point — but because the financial logic behind it is sound. A developer who did not understand fintech reconciliation could not have built this. The knowledge had to come first.</p>
-
-    <h2>Where This Is Going</h2>
-
-    <p>The reconciliation skill is one tool solving one problem. But the pattern it represents — taking deep domain knowledge and expressing it as a systematic, automatable process — is one I intend to apply much more broadly.</p>
-
-    <p>I lead a welfare association where contributions, savings, loans, and welfare payments are still tracked manually. I know exactly what the financial logic of that system looks like. I know every edge case, every exception, every rule that governs how money moves in that community. What I am building now — through my FreeCodeCamp studies and hands-on projects like this one — is the technical capability to turn that knowledge into a platform.</p>
-
-    <p>The reconciliation tool was proof of concept. Not just for the technology, but for a way of working: understand the problem completely, express the logic precisely, build deliberately.</p>
-
-    <p>That approach will not change as the tools get more complex. It will only become more valuable.</p>
-
-  </div>
-  <div class="article-footer">
-    <div class="article-author">
-      <div class="article-author-name">Felix Omondi</div>
-      <div class="article-author-bio">Finance & Business Manager · Kokotech Limited · Nairobi, Kenya</div>
-    </div>
-    <button class="btn-back" onclick="showList()">&#8592; Back to Journal</button>
-  </div>
+<div class="blog-wrap">
+  <div class="blog-grid" id="blog-grid"></div>
+  <div class="blog-empty" id="blog-empty" style="display:none">More guides coming soon.</div>
 </div>
 
 <footer>
-  <p>&#169; 2026 <span>Felix Omondi</span> &mdash; Finance, Fintech &amp; Technology Professional &middot; Nairobi, Kenya</p>
-  <div class="footer-links">
-    <a href="index.html">Home</a>
-    <a href="mailto:cpaomondi@outlook.com">Email</a>
-    <a href="https://www.linkedin.com/in/felix-omondi-a61971182" target="_blank">LinkedIn</a>
+  <div class="fi">
+    <div class="ft-grid">
+      <div>
+        <div class="fb-name">GroupYetu<span>360</span></div>
+        <div class="fb-tagline">Community Management Platform</div>
+        <p class="fb-desc">Kenya's complete platform for chamas, merry-go-rounds, welfare groups, investment clubs, churches, SACCOs and community organisations. Built by Kenyans, for communities worldwide.</p>
+        <div class="fb-contact">
+          <a href="mailto:info@groupyetu.org">✉ info@groupyetu.org</a>
+          <a href="https://wa.me/254702903544">💬 WhatsApp: +254 702 903 544</a>
+          <a href="https://app.groupyetu.org">🌐 app.groupyetu.org</a>
+        </div>
+      </div>
+      <div>
+        <div class="fc-title">Product</div>
+        <div class="fl">
+          <a href="/#features">Features</a>
+          <a href="/#pricing">Pricing</a>
+          <a href="blog.html">Blog</a>
+          <a href="https://app.groupyetu.org">Sign In</a>
+          <a href="https://app.groupyetu.org">Register Free</a>
+        </div>
+      </div>
+      <div>
+        <div class="fc-title">Legal</div>
+        <div class="fl">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+      <div>
+        <div class="fc-title">Company</div>
+        <div class="fl">
+          <a href="mailto:info@groupyetu.org">Contact Us</a>
+          <a href="https://wa.me/254702903544">WhatsApp Support</a>
+          <a href="mailto:info@groupyetu.org">Partner With Us</a>
+        </div>
+      </div>
+    </div>
+    <div class="fb-bottom">
+      <div class="fb-bottom-l">© 2026 EPH Technologies Limited · RC: PVT-RXUMLM2Q · Westlands, Nairobi, Kenya</div>
+      <div class="fb-bottom-r">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="mailto:info@groupyetu.org">Contact</a>
+      </div>
+    </div>
   </div>
 </footer>
 
 <script>
-  function showPost(id) {
-    document.getElementById("post-list").style.display = "none";
-    document.querySelectorAll(".article-wrap").forEach(a => a.classList.remove("active"));
-    document.getElementById(id).classList.add("active");
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }
-  function showList() {
-    document.getElementById("post-list").style.display = "block";
-    document.querySelectorAll(".article-wrap").forEach(a => a.classList.remove("active"));
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }
-  const obs = new IntersectionObserver((entries) => {
-    entries.forEach((e,i) => { if(e.isIntersecting) setTimeout(()=>e.target.classList.add("visible"),i*100); });
-  },{threshold:.08});
-  document.querySelectorAll(".fade-in").forEach(el=>obs.observe(el));
+// Add one object per post here as new posts are published. Newest first.
+var POSTS = [
+  {
+    title: "How to Start and Manage a Community Group in Kenya",
+    excerpt: "A practical guide to starting a welfare group, investment club, chama or SACCO in Kenya — leadership roles, contribution models, registration, and the mistakes that sink most groups in year one.",
+    url: "blog-start-community-group-kenya.html",
+    tag: "Getting Started",
+    date: "2026",
+  },
+  // Next post goes here, e.g.:
+  // { title: "...", excerpt: "...", url: "blog-....html", tag: "...", date: "2026" },
+];
 
-  // Handle direct URL hash links
-  window.addEventListener("load", () => {
-    const hash = window.location.hash;
-    if(hash === "#post1") showPost("post1");
-    if(hash === "#post2") showPost("post2");
-  });
+function renderPosts() {
+  var grid = document.getElementById('blog-grid');
+  var empty = document.getElementById('blog-empty');
+  if (!POSTS.length) { empty.style.display = 'block'; return; }
+  grid.innerHTML = POSTS.map(function(p) {
+    return '<a class="post-card" href="' + p.url + '">' +
+      '<span class="pc-tag">' + p.tag + '</span>' +
+      '<div class="pc-body">' +
+        '<div class="pc-title">' + p.title + '</div>' +
+        '<div class="pc-excerpt">' + p.excerpt + '</div>' +
+        '<div class="pc-meta"><span>' + p.date + '</span><span class="pc-read">Read →</span></div>' +
+      '</div>' +
+    '</a>';
+  }).join('');
+}
+renderPosts();
 </script>
+
 </body>
 </html>
