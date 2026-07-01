@@ -1,0 +1,11 @@
+<svg width="140" height="120" viewBox="0 0 140 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>GroupYetu360 Stacked Logo</title>
+  <circle cx="50" cy="26" r="20" stroke="#c49a30" stroke-width="1.6" fill="rgba(196,154,48,0.08)"/>
+  <circle cx="70" cy="26" r="20" stroke="#c49a30" stroke-width="1.6" fill="rgba(196,154,48,0.08)"/>
+  <circle cx="60" cy="42" r="20" stroke="#1d9e75" stroke-width="1.6" fill="rgba(15,110,86,0.08)"/>
+  <circle cx="60" cy="32" r="7" fill="rgba(31,158,117,0.2)"/>
+  <circle cx="60" cy="32" r="5" fill="#1d9e75"/>
+  <circle cx="60" cy="32" r="2.5" fill="#9fe1cb"/>
+  <text x="70" y="82" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="20" font-weight="700" fill="#ffffff">GroupYetu</text>
+  <text x="70" y="104" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="13" font-weight="400" fill="#c49a30" letter-spacing="8">360</text>
+</svg>

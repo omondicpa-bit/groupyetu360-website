@@ -1,0 +1,11 @@
+<svg width="320" height="72" viewBox="0 0 320 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>GroupYetu360 Logo — Maroon variant</title>
+  <circle cx="30" cy="30" r="22" stroke="rgba(196,154,48,0.8)" stroke-width="1.6" fill="rgba(196,154,48,0.08)"/>
+  <circle cx="50" cy="30" r="22" stroke="rgba(196,154,48,0.8)" stroke-width="1.6" fill="rgba(196,154,48,0.08)"/>
+  <circle cx="40" cy="48" r="22" stroke="rgba(31,158,117,0.7)" stroke-width="1.6" fill="rgba(15,110,86,0.1)"/>
+  <circle cx="40" cy="36" r="8.5" fill="rgba(31,158,117,0.25)"/>
+  <circle cx="40" cy="36" r="5.5" fill="#1d9e75"/>
+  <circle cx="40" cy="36" r="2.8" fill="#9fe1cb"/>
+  <text x="82" y="34" font-family="Georgia, 'Times New Roman', serif" font-size="26" font-weight="700" fill="#ffffff">GroupYetu</text>
+  <text x="83" y="57" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-weight="400" fill="#e0b84a" letter-spacing="8">360</text>
+</svg>
