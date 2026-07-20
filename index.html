@@ -173,7 +173,7 @@ h1 em{color:var(--gold-lt);font-style:normal}
 .sc-desktop-screen{aspect-ratio:1903/913;background:#f0f2f5}
 .sc-desktop-screen img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
 .sc-desktop-label{margin-top:.7rem;font-size:.66rem;letter-spacing:.09em;text-transform:uppercase;color:rgba(255,255,255,.5);text-align:center}
-.sc-dots{display:flex;gap:.5rem;margin-top:1.4rem;position:relative;z-index:1;flex-wrap:wrap;justify-content:center;max-width:230px}
+.sc-dots{display:none}
 .sc-dot{width:22px;height:5px;border-radius:99px;background:rgba(255,255,255,.25);border:none;cursor:pointer;padding:0;transition:all .3s ease}
 .sc-dot.active{background:var(--teal-mid);width:34px}
 
@@ -245,6 +245,13 @@ h1 em{color:var(--gold-lt);font-style:normal}
 .pf.no::before{content:'—';color:var(--border);font-weight:400}
 .pf.sec{font-size:.6rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--ink-faint);margin-top:.5rem;margin-bottom:.05rem;display:block}
 .pf.sec::before{display:none}
+.pf-toggle{display:flex;align-items:center;justify-content:center;gap:.35rem;width:100%;background:none;border:none;cursor:pointer;padding:.55rem 0 1rem;font-size:.76rem;font-weight:700;color:var(--teal)}
+.pf-toggle:hover{color:var(--teal-dk)}
+.pf-chev{transition:transform .3s ease;flex-shrink:0}
+.pf-toggle[aria-expanded="true"] .pf-chev{transform:rotate(180deg)}
+.pf-collapse{max-height:0;overflow:hidden;transition:max-height .4s ease}
+.pf-collapse.open{max-height:420px}
+.pf-collapse .pf-list{margin-bottom:.3rem}
 .btn-pc{display:block;text-align:center;padding:.7rem;font-size:.8rem;font-weight:600;border-radius:99px;text-decoration:none;transition:all .15s;border:none;cursor:pointer;font-family:'Inter',sans-serif;width:100%}
 .btn-teal{background:var(--teal);color:#fff}
 .btn-teal:hover{background:var(--teal-lt)}
@@ -614,7 +621,9 @@ footer{background:#060004;padding:4.5rem 2rem 2rem;color:rgba(255,255,255,.45)}
         <div class="pc-period">Forever - no card needed</div>
         <div class="pc-members">Up to 15 members</div>
         <div class="pc-div"></div>
-        <div class="pf-list">
+        <button class="pf-toggle" aria-expanded="false" onclick="togglePricing(this)"><span>See what's included</span><svg class="pf-chev" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <div class="pf-collapse" id="pfc0">
+            <div class="pf-list">
           <div class="pf sec">Core Features</div>
           <div class="pf">Member register & portals</div>
           <div class="pf">Finance & contribution tracking</div>
@@ -628,6 +637,7 @@ footer{background:#060004;padding:4.5rem 2rem 2rem;color:rgba(255,255,255,.45)}
           <div class="pf no">Projects & investments</div>
           <div class="pf no">Priority support</div>
         </div>
+          </div>
         <a href="https://app.groupyetu.org" class="btn-pc btn-out">Get Started Free</a>
       </div>
       <div class="pc reveal d1">
@@ -636,7 +646,9 @@ footer{background:#060004;padding:4.5rem 2rem 2rem;color:rgba(255,255,255,.45)}
         <div class="pc-period">≈ Ksh 250 per month</div>
         <div class="pc-members">Up to 30 members</div>
         <div class="pc-div"></div>
-        <div class="pf-list">
+        <button class="pf-toggle" aria-expanded="false" onclick="togglePricing(this)"><span>See what's included</span><svg class="pf-chev" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <div class="pf-collapse" id="pfc1">
+            <div class="pf-list">
           <div class="pf sec">Everything in Starter, plus</div>
           <div class="pf">Welfare management</div>
           <div class="pf">Projects & investments tracking</div>
@@ -649,6 +661,7 @@ footer{background:#060004;padding:4.5rem 2rem 2rem;color:rgba(255,255,255,.45)}
           <div class="pf no">M-Pesa STK Push</div>
           <div class="pf no">On-site training</div>
         </div>
+          </div>
         <a href="https://app.groupyetu.org" class="btn-pc btn-out">Start Free Trial</a>
         <div class="pc-note"><strong>2 months free</strong> · then Ksh 3,000/yr</div>
       </div>
@@ -659,7 +672,9 @@ footer{background:#060004;padding:4.5rem 2rem 2rem;color:rgba(255,255,255,.45)}
         <div class="pc-period">≈ Ksh 500 per month</div>
         <div class="pc-members">Up to 75 members</div>
         <div class="pc-div"></div>
-        <div class="pf-list">
+        <button class="pf-toggle" aria-expanded="false" onclick="togglePricing(this)"><span>See what's included</span><svg class="pf-chev" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <div class="pf-collapse" id="pfc2">
+            <div class="pf-list">
           <div class="pf sec">Everything in Basic, plus</div>
           <div class="pf">M-Pesa STK Push payments</div>
           <div class="pf">Auto payment recording</div>
@@ -671,6 +686,7 @@ footer{background:#060004;padding:4.5rem 2rem 2rem;color:rgba(255,255,255,.45)}
           <div class="pf">On-site training (Nairobi)</div>
           <div class="pf no">Dedicated account manager</div>
         </div>
+          </div>
         <a href="https://app.groupyetu.org" class="btn-pc btn-teal">Start Free Trial</a>
         <div class="pc-note"><strong>2 months free</strong> · then Ksh 6,000/yr</div>
       </div>
@@ -680,7 +696,9 @@ footer{background:#060004;padding:4.5rem 2rem 2rem;color:rgba(255,255,255,.45)}
         <div class="pc-period">≈ Ksh 1,000 per month</div>
         <div class="pc-members">Unlimited members</div>
         <div class="pc-div"></div>
-        <div class="pf-list">
+        <button class="pf-toggle" aria-expanded="false" onclick="togglePricing(this)"><span>See what's included</span><svg class="pf-chev" width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M1 3l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          <div class="pf-collapse" id="pfc3">
+            <div class="pf-list">
           <div class="pf sec">Everything in Standard, plus</div>
           <div class="pf">Unlimited member capacity</div>
           <div class="pf">Custom features built for you</div>
@@ -692,12 +710,13 @@ footer{background:#060004;padding:4.5rem 2rem 2rem;color:rgba(255,255,255,.45)}
           <div class="pf">Priority 24/7 support</div>
           <div class="pf">On-site training nationwide</div>
         </div>
+          </div>
         <a href="mailto:info@groupyetu.org" class="btn-pc btn-out">Contact Us</a>
         <div class="pc-note"><strong>2 months free</strong> · then Ksh 12,000/yr</div>
       </div>
     </div>
     <div class="sms-callout reveal" style="max-width:680px;margin:1.5rem auto 0">
-      <strong>📱 Bulk SMS on every plan - powered by Celcom Africa &amp; SMS Leopard.</strong> Buy credits in bundles when you need them. No monthly allowance to worry about. The more you buy, the lower your cost per message.
+      <strong>📱 Bulk SMS on every plan - powered by Celcom Africa.</strong> Buy credits in bundles when you need them. No monthly allowance to worry about. The more you buy, the lower your cost per message.
     </div>
   </div>
 </section>
@@ -729,7 +748,7 @@ footer{background:#060004;padding:4.5rem 2rem 2rem;color:rgba(255,255,255,.45)}
           <span class="faq-q-text">How does Bulk SMS work?</span>
           <span class="faq-chevron">▾</span>
         </div>
-        <div class="faq-a"><div class="faq-a-inner">Bulk SMS is available on all plans on a pay-as-you-go basis. You purchase SMS credits in bundles from within the platform - powered by our SMS partners Celcom Africa and SMS Leopard. Credits do not expire. Admins can send meeting reminders, contribution notices and welfare updates to all members in one click.</div></div>
+        <div class="faq-a"><div class="faq-a-inner">Bulk SMS is available on all plans on a pay-as-you-go basis. You purchase SMS credits in bundles from within the platform - powered by our SMS partner Celcom Africa. Credits do not expire. Admins can send meeting reminders, contribution notices and welfare updates to all members in one click.</div></div>
       </div>
       <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">
@@ -860,6 +879,13 @@ function toggleFaq(btn){
   const isOpen = item.classList.contains('open');
   document.querySelectorAll('.faq-item.open').forEach(i=>i.classList.remove('open'));
   if(!isOpen) item.classList.add('open');
+}
+function togglePricing(btn){
+  const panel = btn.nextElementSibling;
+  const isOpen = panel.classList.contains('open');
+  panel.classList.toggle('open', !isOpen);
+  btn.setAttribute('aria-expanded', String(!isOpen));
+  btn.querySelector('span').textContent = !isOpen ? "Hide details" : "See what's included";
 }
 
 // Horizontal scroll drag
