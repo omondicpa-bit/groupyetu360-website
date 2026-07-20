@@ -57,6 +57,7 @@ body{font-family:'Inter',sans-serif;color:var(--ink);background:#fff;overflow-x:
 .d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}.d5{transition-delay:.5s}
 
 /* ===== NAV ===== */
+#features,#for-who,#pricing,#faq{scroll-margin-top:88px}
 #nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:.9rem 2rem;display:flex;align-items:center;justify-content:space-between;transition:all .3s}
 #nav.sc{background:rgba(255,255,255,.97);backdrop-filter:blur(16px);box-shadow:0 1px 24px rgba(0,0,0,.07)}
 .nb{display:flex;align-items:center;gap:.7rem;text-decoration:none}
@@ -126,7 +127,7 @@ h1 em{color:var(--gold-lt);font-style:normal}
 .for-pill.active .for-pill-text{color:var(--teal-dk)}
 
 /* ===== FEATURES ===== */
-.feat-section{padding:6rem 2rem;background:var(--surface-2)}
+.feat-section{padding:4.5rem 2rem;background:var(--surface-2)}
 .si{max-width:1240px;margin:0 auto}
 .sl{font-size:.68rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--teal);margin-bottom:.6rem}
 .st{font-family:'Crimson Pro',serif;font-size:2.6rem;font-weight:700;color:var(--ink);line-height:1.12;margin-bottom:.85rem}
@@ -178,7 +179,7 @@ h1 em{color:var(--gold-lt);font-style:normal}
 .sc-dot.active{background:var(--teal-mid);width:34px}
 
 /* ===== COMMUNITY IMPACT ===== */
-.impact-section{background:linear-gradient(155deg,#1e0008 0%,#800020 45%,#0d3d2e 100%);padding:6rem 2rem;position:relative;overflow:hidden}
+.impact-section{background:linear-gradient(155deg,#1e0008 0%,#800020 45%,#0d3d2e 100%);padding:4.5rem 2rem;position:relative;overflow:hidden}
 .impact-section::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 20% 80%,rgba(31,158,117,.15) 0%,transparent 50%),radial-gradient(circle at 80% 20%,rgba(196,154,48,.1) 0%,transparent 50%)}
 .impact-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-top:3.5rem;position:relative;z-index:1}
 .impact-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--r-lg);padding:2rem;transition:all .22s}
@@ -189,7 +190,7 @@ h1 em{color:var(--gold-lt);font-style:normal}
 .impact-tag{display:inline-block;margin-top:.75rem;font-size:.65rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-lt);border:1px solid rgba(196,154,48,.35);padding:.2rem .6rem;border-radius:99px}
 
 /* ===== FAQ ACCORDION ===== */
-.faq-section{padding:6rem 2rem;background:var(--surface-2)}
+.faq-section{padding:4.5rem 2rem;background:var(--surface-2)}
 .faq-list{max-width:700px;margin:2.5rem auto 0;display:flex;flex-direction:column;gap:.6rem}
 .faq-item{background:#fff;border:1.5px solid var(--border-soft);border-radius:var(--r);overflow:hidden;transition:border-color .2s}
 .faq-item.open{border-color:var(--teal)}
@@ -202,7 +203,7 @@ h1 em{color:var(--gold-lt);font-style:normal}
 .faq-a-inner{padding:.2rem 1.25rem 1.25rem;font-size:.83rem;color:var(--ink-faint);line-height:1.75;border-top:1px solid var(--border-soft)}
 
 /* ===== TESTIMONIALS ===== */
-.testi-section{background:linear-gradient(135deg,#2a0008 0%,#5a0016 45%,#1e0008 100%);padding:6rem 0;overflow:hidden;position:relative}
+.testi-section{background:linear-gradient(135deg,#2a0008 0%,#5a0016 45%,#1e0008 100%);padding:4.5rem 0;overflow:hidden;position:relative}
 .testi-section::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 70% 50%,rgba(15,110,86,.12) 0%,transparent 55%)}
 .testi-hd{text-align:center;padding:0 2rem;margin-bottom:3rem;position:relative;z-index:1}
 .testi-sl{font-size:.68rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-lt);margin-bottom:.7rem}
@@ -225,7 +226,7 @@ h1 em{color:var(--gold-lt);font-style:normal}
 .tc-role{font-size:.67rem;color:rgba(255,255,255,.45);line-height:1.45;margin-top:.08rem}
 
 /* ===== PRICING ===== */
-.price-section{padding:6rem 2rem;background:#fff}
+.price-section{padding:4.5rem 2rem;background:#fff}
 .pg{display:grid;grid-template-columns:repeat(4,1fr);gap:1.1rem;margin-top:3rem;align-items:start}
 .pc{background:var(--surface-2);border:1.5px solid var(--border-soft);border-radius:var(--r-lg);padding:1.65rem;position:relative;transition:all .2s}
 .pc:hover{transform:translateY(-3px);box-shadow:0 12px 36px rgba(0,0,0,.07)}
@@ -262,7 +263,7 @@ h1 em{color:var(--gold-lt);font-style:normal}
 .sms-callout{background:var(--teal-pale);border:1px solid var(--teal-mid);border-radius:var(--r);padding:.85rem 1.1rem;margin-top:1.5rem;font-size:.78rem;color:var(--teal-dk);line-height:1.65}
 
 /* ===== CTA ===== */
-.cta-section{background:linear-gradient(145deg,#085041 0%,#0f6e56 50%,#085041 100%);padding:7rem 2rem;text-align:center;position:relative;overflow:hidden}
+.cta-section{background:linear-gradient(145deg,#085041 0%,#0f6e56 50%,#085041 100%);padding:5rem 2rem;text-align:center;position:relative;overflow:hidden}
 .cta-section::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle at 30% 70%,rgba(196,154,48,.12) 0%,transparent 50%)}
 .cta-t{font-family:'Crimson Pro',serif;font-size:3rem;font-weight:700;color:#fff;margin-bottom:.8rem;position:relative;z-index:1}
 .cta-t span{color:var(--gold-lt)}
@@ -334,6 +335,7 @@ footer{background:#060004;padding:4.5rem 2rem 2rem;color:rgba(255,255,255,.45)}
     <a href="#features">Features</a>
     <a href="#for-who">Who It's For</a>
     <a href="#pricing">Pricing</a>
+    <a href="#faq">FAQ</a>
     <a href="blog.html">Blog</a>
     <a href="privacy.html">Privacy</a>
     <a href="terms.html">Terms</a>
