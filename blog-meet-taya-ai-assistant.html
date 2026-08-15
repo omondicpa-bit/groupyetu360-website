@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Meet Taya: Your Group's New AI Assistant | GroupYetu360</title>
+<meta name="description" content="Taya is the AI assistant now built into GroupYetu360. It handles meeting minutes, financial summaries, and arrears reminders for your chama, SACCO, or welfare group."/>
+<meta name="keywords" content="chama AI assistant, GroupYetu360 Taya, meeting minutes AI, group finance assistant Kenya, arrears reminder AI"/>
+<meta name="author" content="EPH Technologies Limited"/>
+<meta name="robots" content="index, follow"/>
+<link rel="canonical" href="https://groupyetu.org/blog-meet-taya-ai-assistant.html"/>
+<meta property="og:title" content="Meet Taya: Your Group's New AI Assistant"/>
+<meta property="og:description" content="Taya is the AI assistant now built into GroupYetu360. It handles meeting minutes, financial summaries, and arrears reminders for your chama, SACCO, or welfare group."/>
+<meta property="og:url" content="https://groupyetu.org/blog-meet-taya-ai-assistant.html"/>
+<meta property="og:type" content="article"/>
+<meta property="og:image" content="https://groupyetu.org/feature-graphic.png"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://groupyetu.org/feature-graphic.png"/>
+<link rel="icon" href="https://app.groupyetu.org/favicon32x32.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital, wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+:root{
+ --maroon:#800020;--maroon-dk:#5a0016;--maroon-lt:#a0002a;--maroon-pale:#fdf0f3;--maroon-muted:#e08898;
+ --teal:#0f6e56;--teal-dk:#085041;--teal-lt:#1d9e75;--teal-pale:#e1f5ee;--teal-mid:#9fe1cb;
+ --gold:#c49a30;--gold-lt:#e0b84a;--gold-pale:#fdf5e0;
+ --ink:#1a1a1a;--ink-soft:#3d3d3d;--ink-faint:#6b7280;
+ --surface:#fff;--surface-2:#f6faf8;--surface-3:#ecf5f0;--border:#d8ece4;--border-soft:#e8f0eb;
+ --r:8px;--r-lg:14px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter', sans-serif;color:var(--ink);background:#fff;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+
+/* NAV (matches site) */
+nav#nav{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:1rem 4rem;background:#fff;border-bottom:1px solid var(--border)}
+.nb{display:flex;align-items:center;gap:.55rem}
+.nb-name{font-family:'Crimson Pro', serif;font-size:1.45rem;font-weight:700;color:var(--maroon)}
+.nb-name span{color:var(--gold)}
+.nl{display:flex;align-items:center;gap:1.9rem}
+.nl a{font-size:.86rem;font-weight:500;color:var(--ink-soft);transition:color .15s}
+.nl a:hover{color:var(--teal)}
+.nl-cta{background:var(--teal);color:#fff!important;padding:.42rem 1.1rem;border-radius:99px;font-weight:600!important;box-shadow:0 2px 10px rgba(15,110,86, .3)}
+.nl-cta:hover{background:var(--teal-lt)!important}
+.nav-mob{display:none;background:none;border:none;font-size:1.4rem;color:var(--maroon);cursor:pointer}
+@media(max-width:860px){nav#nav{padding:.9rem 1.2rem}.nl{display:none}.nl.open{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:#fff;padding:1.2rem;border-bottom:1px solid var(--border);gap:1rem}.nav-mob{display:block}}
+
+/* ARTICLE */
+.article-hero{background:linear-gradient(135deg, var(--maroon-dk), var(--maroon));padding:3.5rem 1.5rem 3rem;text-align:center}
+.a-tag{font-size:.68rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-lt);margin-bottom:.9rem}
+.a-title{font-family:'Crimson Pro', serif;font-size:2.6rem;font-weight:700;color:#fff;max-width:760px;margin:0 auto 1rem;line-height:1.18}
+.a-sub{font-size:1.02rem;color:rgba(255,255,255, .82);max-width:620px;margin:0 auto;line-height:1.6}
+.a-meta{margin-top:1.6rem;font-size:.78rem;color:rgba(255,255,255, .65)}
+
+.a-body{max-width:700px;margin:0 auto;padding:3.2rem 1.5rem 1rem}
+.a-body p{font-size:1.02rem;line-height:1.82;color:var(--ink-soft);margin-bottom:1.35rem}
+.a-body h2{font-family:'Crimson Pro', serif;font-size:1.65rem;font-weight:700;color:var(--maroon);margin:2.6rem 0 1.1rem;line-height:1.25}
+.a-body h3{font-family:'Crimson Pro', serif;font-size:1.22rem;font-weight:700;color:var(--ink);margin:1.8rem 0 .7rem}
+.a-body ul, .a-body ol{margin:0 0 1.4rem 1.4rem;color:var(--ink-soft)}
+.a-body li{font-size:1rem;line-height:1.75;margin-bottom:.55rem}
+.a-body strong{color:var(--ink);font-weight:700}
+.a-callout{background:var(--teal-pale);border-left:3px solid var(--teal);border-radius:0 var(--r) var(--r) 0;padding:1.1rem 1.35rem;margin:1.8rem 0;font-size:.95rem;line-height:1.7;color:var(--teal-dk)}
+.a-callout strong{color:var(--teal-dk)}
+.a-warn{background:var(--maroon-pale);border-left:3px solid var(--maroon);border-radius:0 var(--r) var(--r) 0;padding:1.1rem 1.35rem;margin:1.8rem 0;font-size:.95rem;line-height:1.7;color:var(--maroon-dk)}
+.a-warn strong{color:var(--maroon-dk)}
+
+.a-table-wrap{overflow-x:auto;margin:1.6rem 0 2rem}
+.a-table{width:100%;border-collapse:collapse;font-size:.88rem}
+.a-table th{background:var(--surface-3);color:var(--maroon);text-align:left;padding:.7rem .9rem;font-weight:700;border-bottom:2px solid var(--border)}
+.a-table td{padding:.7rem .9rem;border-bottom:1px solid var(--border-soft);color:var(--ink-soft);vertical-align:top}
+.a-table tr:last-child td{border-bottom:none}
+
+.a-check-list{list-style:none;margin:0 0 1.4rem 0}
+.a-check-list li{position:relative;padding-left:1.7rem;font-size:1rem;line-height:1.75;margin-bottom:.7rem;color:var(--ink-soft)}
+.a-check-list li::before{content:'✓';position:absolute;left:0;top:0;color:var(--teal);font-weight:700}
+
+.a-faq-q{font-weight:700;color:var(--ink);margin-top:1.5rem;margin-bottom:.4rem;font-size:1rem}
+
+.a-cta{max-width:700px;margin:3rem auto 4rem;background:var(--surface-2);border:1px solid var(--border);border-radius:var(--r-lg);padding:2.4rem 2rem;text-align:center}
+.a-cta h3{font-family:'Crimson Pro', serif;font-size:1.5rem;color:var(--maroon);margin-bottom:.7rem}
+.a-cta p{font-size:.95rem;color:var(--ink-faint);margin-bottom:1.4rem;line-height:1.6}
+.a-cta-btn{display:inline-block;background:var(--teal);color:#fff;padding:.75rem 1.8rem;border-radius:99px;font-weight:600;font-size:.92rem;box-shadow:0 4px 16px rgba(15,110,86, .3)}
+.a-cta-btn:hover{background:var(--teal-lt)}
+
+/* FOOTER (matches site) */
+footer{background:var(--maroon-dk);padding:3.5rem 1.5rem 2rem}
+.fi{max-width:1180px;margin:0 auto}
+.ft-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:2.5rem;margin-bottom:2.2rem}
+.fb-name{font-family:'Crimson Pro', serif;font-size:1.5rem;font-weight:700;color:#fff}
+.fb-name span{color:var(--gold-lt)}
+.fb-tagline{font-size:.78rem;color:var(--gold-lt);margin:.3rem 0 .9rem}
+.fb-desc{font-size:.84rem;color:rgba(255,255,255, .65);line-height:1.65;margin-bottom:1rem}
+.fb-contact{display:flex;flex-direction:column;gap:.4rem}
+.fb-contact a{font-size:.8rem;color:rgba(255,255,255, .75)}
+.fc-title{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-lt);margin-bottom:.9rem}
+.fl{display:flex;flex-direction:column;gap:.6rem}
+.fl a{font-size:.82rem;color:rgba(255,255,255, .65)}
+.fl a:hover{color:#fff}
+.fb-bottom{border-top:1px solid rgba(255,255,255, .12);padding-top:1.4rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:.8rem}
+.fb-bottom-l, .fb-bottom-r{font-size:.75rem;color:rgba(255,255,255, .5)}
+.fb-bottom-r{display:flex;gap:1.2rem}
+.fb-bottom-r a:hover{color:#fff}
+@media(max-width:760px){.ft-grid{grid-template-columns:1fr 1fr}.a-title{font-size:1.95rem}.a-sub{font-size:.94rem}}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+ <a href="/" class="nb">
+ <svg width="32" height="28" viewBox="0 0 80 80" fill="none"><circle cx="30" cy="28" r="24" stroke="#c49a30" stroke-width="1.8" fill="rgba(196,154,48, .08)"/><circle cx="50" cy="28" r="24" stroke="#c49a30" stroke-width="1.8" fill="rgba(196,154,48, .08)"/><circle cx="40" cy="50" r="24" stroke="#1d9e75" stroke-width="1.8" fill="rgba(15,110,86, .08)"/><circle cx="40" cy="36" r="6" fill="#1d9e75"/><circle cx="40" cy="36" r="3" fill="#9fe1cb"/></svg>
+ <div class="nb-name">GroupYetu<span>360</span></div>
+ </a>
+ <div class="nl" id="nl">
+ <a href="/#features">Features</a>
+ <a href="/#for-who">Who It's For</a>
+ <a href="/#pricing">Pricing</a>
+ <a href="blog.html">Blog</a>
+ <a href="mailto:info@groupyetu.org">Contact</a>
+ <a href="https://app.groupyetu.org" class="nl-cta">Sign In →</a>
+ </div>
+ <button class="nav-mob" onclick="document.getElementById('nl').classList.toggle('open')" aria-label="Menu">☰</button>
+</nav>
+
+<section class="article-hero">
+ <div class="a-tag">Product · New Feature · 2026</div>
+  <h1 class="a-title">Meet Taya: Your Group's New AI Assistant</h1>
+  <p class="a-sub">Taya lives inside GroupYetu360. It writes your meeting minutes, explains your finances in plain language, and drafts arrears reminders. All in seconds, not hours.</p>
+  <div class="a-meta">GroupYetu360 Team · Updated 2026</div>
+</section>
+
+<article class="a-body">
+
+  <p>Every group has the same quiet burden. Someone has to write up what happened at the meeting. Someone has to explain the numbers to members who weren't there. Someone has to send the awkward reminder to the member who hasn't paid in two months. That work usually falls on one person, late at night, after everyone else has gone home.</p>
+
+  <p>Taya is built to take that work off your plate. It's an AI assistant that lives inside GroupYetu360, connected to your group's real records. Not a separate app. Not something you copy and paste numbers into. It already knows your group.</p>
+
+  <h2>What Taya actually does</h2>
+
+  <h3>Meeting minutes, done in seconds</h3>
+  <p>Tell Taya what was discussed. It writes clean, formatted minutes ready to file. No more typing them up from memory the next morning.</p>
+
+  <h3>Plain language financial summaries</h3>
+  <p>Ask Taya for this month's numbers. You get a clear breakdown in normal language. Not a spreadsheet you have to decode yourself.</p>
+
+  <h3>Arrears reminders that sound like you</h3>
+  <p>Taya drafts a polite, direct nudge for members who are behind on contributions. You review it, approve it, and it goes out. The awkward conversation gets easier.</p>
+
+  <h3>Instant answers about your group</h3>
+  <p>Ask Taya something like "when did Fredrick last pay?" It checks your actual records and answers right away. No digging through transaction history yourself.</p>
+
+  <div class="a-callout">
+    <strong>A real example.</strong> An admin asks Taya to remind members who haven't paid this month. Taya finds three people in arrears, drafts a short SMS, and asks for approval before sending. One message, three members reminded, no manual lookup required.
+  </div>
+
+  <h2>Why this matters for a volunteer-run group</h2>
+  <p>Most chama, SACCO, and welfare group leadership is unpaid. Treasurers and chairpersons do this work on top of their actual jobs. The admin tasks that eat up their time are rarely the interesting part of running a group. They're the paperwork.</p>
+  <p>Taya doesn't replace the judgment calls a real admin has to make. It handles the repetitive, time consuming parts so the people running your group can spend their limited time on decisions that actually need a human.</p>
+
+  <h2>What Taya doesn't do</h2>
+  <p>Taya doesn't move money, approve payments, or make decisions on the group's behalf. It drafts, summarizes, and answers. A person still reviews and approves anything that goes out, like an SMS to members. That's a deliberate choice, not a limitation we're working around.</p>
+
+  <h2>Frequently Asked Questions</h2>
+  <div class="a-faq-q">Is Taya available on every plan?</div>
+  <p>Taya is built into GroupYetu360 and accessible to group admins. Usage is designed to stay sustainable across all plans, including the free Starter tier.</p>
+  <div class="a-faq-q">Does Taya see our group's private financial data?</div>
+  <p>Taya only accesses the records of the group asking the question, the same data an admin already sees inside their own dashboard. It doesn't have visibility into other organisations on the platform.</p>
+  <div class="a-faq-q">Can Taya send messages without anyone checking them first?</div>
+  <p>No. Taya drafts and asks for approval before anything is sent to members. A human always makes the final call.</p>
+
+
+</article>
+
+<div class="a-cta">
+  <h3>Try Taya with your own group</h3>
+  <p>Free to start. Taya is built in from day one, no extra setup required.</p>
+  <a href="https://app.groupyetu.org" class="a-cta-btn">Start Free →</a>
+</div>
+
+<footer>
+ <div class="fi">
+ <div class="ft-grid">
+ <div>
+ <div class="fb-name">GroupYetu<span>360</span></div>
+ <div class="fb-tagline">Community Management Platform</div>
+ <p class="fb-desc">Kenya's complete platform for chamas, merry-go-rounds, welfare groups, investment clubs, churches, SACCOs and community organisations. Built by Kenyans, for communities worldwide.</p>
+ <div class="fb-contact">
+ <a href="mailto:info@groupyetu.org">✉ info@groupyetu.org</a>
+ <a href="https://wa.me/254702903544">💬 WhatsApp: +254 702 903 544</a>
+ <a href="https://app.groupyetu.org">🌐 app.groupyetu.org</a>
+ </div>
+ </div>
+ <div>
+ <div class="fc-title">Product</div>
+ <div class="fl">
+ <a href="/#features">Features</a>
+ <a href="/#pricing">Pricing</a>
+ <a href="https://app.groupyetu.org">Sign In</a>
+ <a href="https://app.groupyetu.org">Register Free</a>
+ </div>
+ </div>
+ <div>
+ <div class="fc-title">Legal</div>
+ <div class="fl">
+ <a href="/privacy.html">Privacy Policy</a>
+ <a href="/terms.html">Terms of Service</a>
+ </div>
+ </div>
+ <div>
+ <div class="fc-title">Company</div>
+ <div class="fl">
+ <a href="mailto:info@groupyetu.org">Contact Us</a>
+ <a href="https://wa.me/254702903544">WhatsApp Support</a>
+ <a href="mailto:info@groupyetu.org">Partner With Us</a>
+ </div>
+ </div>
+ </div>
+ <div class="fb-bottom">
+ <div class="fb-bottom-l">© 2026 EPH Technologies Limited · RC: PVT-RXUMLM2Q · Westlands, Nairobi, Kenya</div>
+ <div class="fb-bottom-r">
+ <a href="/privacy.html">Privacy</a>
+ <a href="/terms.html">Terms</a>
+ <a href="mailto:info@groupyetu.org">Contact</a>
+ </div>
+ </div>
+ </div>
+</footer>
+
+</body>
+</html>
