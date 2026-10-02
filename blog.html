@@ -19,7 +19,7 @@
 <link rel="icon" href="https://app.groupyetu.org/favicon32x32.png"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
 <style>
 :root{
   --maroon:#800020;--maroon-dk:#5a0016;--maroon-lt:#a0002a;--maroon-pale:#fdf0f3;--maroon-muted:#e08898;
@@ -31,12 +31,12 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Inter',sans-serif;color:var(--ink);background:#fff;overflow-x:hidden}
+body{font-family:'Manrope',system-ui,sans-serif;color:var(--ink);background:#fff;overflow-x:hidden}
 a{text-decoration:none;color:inherit}
 
 nav#nav{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:1rem 4rem;background:#fff;border-bottom:1px solid var(--border)}
 .nb{display:flex;align-items:center;gap:.55rem}
-.nb-name{font-family:'Crimson Pro',serif;font-size:1.45rem;font-weight:700;color:var(--maroon)}
+.nb-name{font-family:'Manrope',system-ui,sans-serif;font-size:1.45rem;font-weight:700;color:var(--maroon)}
 .nb-name span{color:var(--gold)}
 .nl{display:flex;align-items:center;gap:1.9rem}
 .nl a{font-size:.86rem;font-weight:500;color:var(--ink-soft);transition:color .15s}
@@ -49,7 +49,7 @@ nav#nav{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify
 
 .blog-hero{background:linear-gradient(135deg,var(--maroon-dk),var(--maroon));padding:3.2rem 1.5rem 2.8rem;text-align:center}
 .bh-tag{font-size:.68rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gold-lt);margin-bottom:.9rem}
-.bh-title{font-family:'Crimson Pro',serif;font-size:2.4rem;font-weight:700;color:#fff;margin-bottom:.9rem}
+.bh-title{font-family:'Manrope',system-ui,sans-serif;font-size:2.4rem;font-weight:700;color:#fff;margin-bottom:.9rem}
 .bh-sub{font-size:1rem;color:rgba(255,255,255,.82);max-width:560px;margin:0 auto;line-height:1.6}
 
 .blog-wrap{max-width:1000px;margin:0 auto;padding:3rem 1.5rem 4rem}
@@ -58,7 +58,7 @@ nav#nav{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify
 .post-card:hover{box-shadow:0 10px 30px rgba(0,0,0,.08);transform:translateY(-3px)}
 .pc-tag{background:var(--teal-pale);color:var(--teal-dk);font-size:.66rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:.35rem .9rem;display:inline-block;margin:1.1rem 1.1rem 0}
 .pc-body{padding:.7rem 1.1rem 1.3rem;flex:1;display:flex;flex-direction:column}
-.pc-title{font-family:'Crimson Pro',serif;font-size:1.28rem;font-weight:700;color:var(--ink);line-height:1.3;margin-bottom:.6rem}
+.pc-title{font-family:'Manrope',system-ui,sans-serif;font-size:1.28rem;font-weight:700;color:var(--ink);line-height:1.3;margin-bottom:.6rem}
 .pc-excerpt{font-size:.87rem;color:var(--ink-faint);line-height:1.6;margin-bottom:1rem;flex:1}
 .pc-meta{font-size:.72rem;color:var(--ink-faint);display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--border-soft);padding-top:.8rem}
 .pc-read{color:var(--teal);font-weight:700}
@@ -68,7 +68,7 @@ nav#nav{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify
 footer{background:var(--maroon-dk);padding:3.5rem 1.5rem 2rem}
 .fi{max-width:1180px;margin:0 auto}
 .ft-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:2.5rem;margin-bottom:2.2rem}
-.fb-name{font-family:'Crimson Pro',serif;font-size:1.5rem;font-weight:700;color:#fff}
+.fb-name{font-family:'Manrope',system-ui,sans-serif;font-size:1.5rem;font-weight:700;color:#fff}
 .fb-name span{color:var(--gold-lt)}
 .fb-tagline{font-size:.78rem;color:var(--gold-lt);margin:.3rem 0 .9rem}
 .fb-desc{font-size:.84rem;color:rgba(255,255,255,.65);line-height:1.65;margin-bottom:1rem}
@@ -116,6 +116,12 @@ footer{background:var(--maroon-dk);padding:3.5rem 1.5rem 2rem}
   <div class="blog-empty" id="blog-empty" style="display:none">More guides coming soon.</div>
 </div>
 
+<!-- Android app (Oct 2026) -->
+<div style="background:linear-gradient(150deg,#4a0013 0%,#800020 42%,#5a0f2a 64%,#0d4a38 100%);color:#fff;padding:34px 20px;text-align:center;font-family:'Manrope',system-ui,sans-serif">
+  <div style="font-size:22px;font-weight:800;letter-spacing:-.01em">GroupYetu360 is now on Google Play</div>
+  <div style="margin:6px 0 16px;color:#f3dde3;font-size:15px">Your group's money, organised and accounted for, on your phone.</div>
+  <a href="https://play.google.com/store/apps/details?id=com.ephtechnologies.groupyetu360" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;background:#000;color:#fff;border-radius:12px;padding:9px 18px 9px 14px;text-decoration:none;border:1px solid rgba(255,255,255,.3)"><svg width="22" height="24" viewBox="0 0 26 28" aria-hidden="true"><path d="M1.2 1.1 14.4 14 1.2 26.9c-.4-.3-.7-.9-.7-1.6V2.7c0-.7.3-1.3.7-1.6z" fill="#2196F3"/><path d="M18.9 9.5 14.4 14 1.2 1.1c.3-.2.6-.3 1-.3.4 0 .7.1 1.1.3z" fill="#4CAF50"/><path d="M18.9 18.5 3.3 27.6c-.4.2-.7.3-1.1.3-.4 0-.7-.1-1-.3L14.4 14z" fill="#F44336"/><path d="M24.3 14c0 .8-.4 1.5-1.1 1.9l-4.3 2.6-4.5-4.5 4.5-4.5 4.3 2.6c.7.4 1.1 1.1 1.1 1.9z" fill="#FFC107"/></svg><span style="text-align:left"><small style="display:block;font-size:10.5px;opacity:.85">GET IT ON</small><strong style="font-size:18px">Google Play</strong></span></a>
+</div>
 <footer>
   <div class="fi">
     <div class="ft-grid">
