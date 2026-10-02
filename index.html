@@ -42,7 +42,7 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{font-family:var(--font);color:var(--ink);background:var(--surface);-webkit-font-smoothing:antialiased;overflow-x:hidden;line-height:1.55}
-img{max-width:100%;display:block}
+img{max-width:100%;height:auto;display:block}
 a{color:inherit}
 .wrap{width:min(1180px,100% - 40px);margin-inline:auto}
 :focus-visible{outline:3px solid var(--gold-lt);outline-offset:3px;border-radius:6px}
@@ -66,7 +66,7 @@ a{color:inherit}
 .nav{position:fixed;inset:0 0 auto;z-index:50;transition:background .2s,box-shadow .2s}
 .nav-in{display:flex;align-items:center;gap:20px;height:72px}
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;font-size:19px;color:#fff;letter-spacing:-.01em}
-.logo span{color:var(--gold-lt)}
+.logo .wm span{color:var(--gold-lt)}
 .nav-links{display:flex;gap:4px;margin-left:auto}
 .nav-links a{padding:8px 12px;border-radius:10px;font-size:14.5px;font-weight:700;color:rgba(255,255,255,.88);text-decoration:none}
 .nav-links a:hover{background:rgba(255,255,255,.12);color:#fff}
@@ -74,7 +74,7 @@ a{color:inherit}
 .nav-cta .btn{min-height:42px;padding:0 16px;font-size:14px;border-radius:12px}
 .nav.solid{background:rgba(255,255,255,.96);backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--border)}
 .nav.solid .logo{color:var(--ink)}
-.nav.solid .logo span{color:var(--maroon)}
+.nav.solid .logo .wm span{color:var(--maroon)}
 .nav.solid .nav-links a{color:var(--ink-soft)}
 .nav.solid .nav-links a:hover{background:var(--canvas);color:var(--ink)}
 .nav.solid .btn-ghost-light{background:#fff;border-color:#d5d9d6;color:var(--ink)}
@@ -93,8 +93,8 @@ a{color:inherit}
 .hero-lede{margin-top:20px;font-size:18.5px;line-height:1.6;color:#f3dde3;max-width:34em}
 .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px;align-items:center}
 .hero-note{margin-top:18px;font-size:14px;color:#e9c7d0}
-.hero-phones{position:relative;height:620px}
-.hero-phones img{position:absolute;bottom:-90px;width:300px;filter:drop-shadow(0 30px 50px rgba(20,0,8,.45))}
+.hero-phones{position:relative;height:600px;margin-top:20px}
+.hero-phones img{position:absolute;bottom:-120px;width:290px;filter:drop-shadow(0 30px 50px rgba(20,0,8,.45))}
 .hero-phones .p1{left:6%;transform:rotate(-6deg);bottom:-60px}
 .hero-phones .p2{right:4%;transform:rotate(5deg);z-index:2}
 .trust{position:relative;background:#fff;border-radius:22px;margin-top:-56px;z-index:3;box-shadow:0 18px 50px rgba(16,40,32,.12);display:grid;grid-template-columns:repeat(4,1fr)}
@@ -286,7 +286,7 @@ footer{background:#120a0e;color:#cbbfc4;padding:70px 0 34px;margin-top:100px}
 <a class="skip" href="#main">Skip to content</a>
 <header class="nav" id="nav">
   <div class="wrap nav-in">
-    <a class="logo" href="#top"><svg width="34" height="34" viewBox="0 0 80 80" fill="none" aria-hidden="true"><circle cx="30" cy="28" r="24" stroke="#e0b84a" stroke-width="3.2" fill="rgba(224,184,74,0.15)"/><circle cx="50" cy="28" r="24" stroke="#e0b84a" stroke-width="3.2" fill="rgba(224,184,74,0.15)"/><circle cx="40" cy="50" r="24" stroke="#9fe1cb" stroke-width="3.2" fill="rgba(159,225,203,0.15)"/><circle cx="40" cy="36" r="6" fill="#1d9e75"/><circle cx="40" cy="36" r="3" fill="#9fe1cb"/></svg>GroupYetu<span>360</span></a>
+    <a class="logo" href="#top"><svg width="34" height="34" viewBox="0 0 80 80" fill="none" aria-hidden="true"><circle cx="30" cy="28" r="24" stroke="#e0b84a" stroke-width="3.2" fill="rgba(224,184,74,0.15)"/><circle cx="50" cy="28" r="24" stroke="#e0b84a" stroke-width="3.2" fill="rgba(224,184,74,0.15)"/><circle cx="40" cy="50" r="24" stroke="#9fe1cb" stroke-width="3.2" fill="rgba(159,225,203,0.15)"/><circle cx="40" cy="36" r="6" fill="#1d9e75"/><circle cx="40" cy="36" r="3" fill="#9fe1cb"/></svg><span class="wm">GroupYetu<span>360</span></span></a>
     <nav class="nav-links" aria-label="Main">
       <a href="#features">Features</a><a href="#mpesa">M-Pesa</a><a href="#taya">Taya AI</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a href="blog.html">Blog</a>
     </nav>
@@ -312,8 +312,8 @@ footer{background:#120a0e;color:#cbbfc4;padding:70px 0 34px;margin-top:100px}
       <p class="hero-note">Free for groups of up to 15. Paid plans start with 60 days free.</p>
     </div>
     <div class="hero-phones" aria-hidden="true">
-      <img class="p1" src="phone-admin.webp" alt="" width="520" height="1074" loading="eager">
-      <img class="p2" src="phone-member.webp" alt="" width="520" height="1074" loading="eager">
+      <img class="p1" src="phone-admin.webp" alt="" width="760" height="1594" loading="eager">
+      <img class="p2" src="phone-member.webp" alt="" width="760" height="1594" loading="eager">
     </div>
   </div>
 </section>
@@ -361,7 +361,7 @@ footer{background:#120a0e;color:#cbbfc4;padding:70px 0 34px;margin-top:100px}
   <div class="wrap">
     <div class="sec-head reveal"><h2>Everything a group treasurer juggles, in one app</h2><p>Retire the WhatsApp screenshots, the exercise book and the spreadsheet only one person understands.</p></div>
     <div class="bento">
-      <div class="card big span4 reveal"><div class="ctext"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="20" height="13" rx="2"/><circle cx="12" cy="12.5" r="2.5"/><path d="M6 10v5M18 10v5"/></svg></span><h3>Contributions and finance</h3><p>Savings, shares, monthly dues, expenses and other income, with the group balance and every member's balance always up to date. Monthly charts show what has come in, and who is behind.</p></div><img src="phone-money.webp" alt="The Money screen showing a year's collections" width="520" height="1074" loading="lazy"></div>
+      <div class="card big span4 reveal"><div class="ctext"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="20" height="13" rx="2"/><circle cx="12" cy="12.5" r="2.5"/><path d="M6 10v5M18 10v5"/></svg></span><h3>Contributions and finance</h3><p>Savings, shares, monthly dues, expenses and other income, with the group balance and every member's balance always up to date. Monthly charts show what has come in, and who is behind.</p></div><img src="phone-money.webp" alt="The Money screen showing a year's collections" width="760" height="1594" loading="lazy"></div>
       <div class="card span2 tone-teal reveal"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8M18.5 14.8c1.6.8 2.6 2.5 3 5.2"/></svg></span><h3>Member register</h3><p>Every member with their number, status, phone and full payment history. Find anyone in seconds.</p></div>
       <div class="card span2 tone-gold reveal"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 0 1 15.4-6.4L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15.4 6.4L3 16"/><path d="M3 21v-5h5"/></svg></span><h3>Merry-go-round</h3><p>Rounds, turns and payouts, so nobody wonders whose turn is next or how much was collected.</p></div>
       <div class="card span2 tone-maroon reveal"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.5 4.5 0 0 1 12 7.2 4.5 4.5 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></svg></span><h3>Welfare</h3><p>Open a fund for a bereavement or celebration, set the amount per member and see who has given.</p></div>
@@ -376,7 +376,7 @@ footer{background:#120a0e;color:#cbbfc4;padding:70px 0 34px;margin-top:100px}
 
 <section id="mpesa">
   <div class="wrap mpesa-grid">
-    <div class="mpesa-phone reveal"><img src="phone-member.webp" alt="A member's home screen with a Pay with M-Pesa button" width="520" height="1074" loading="lazy"></div>
+    <div class="mpesa-phone reveal"><img src="phone-member.webp" alt="A member's home screen with a Pay with M-Pesa button" width="760" height="1594" loading="lazy"></div>
     <div class="reveal">
       <div class="sec-head" style="margin-bottom:0"><h2>Members pay with an M-Pesa prompt. The record keeps itself.</h2><p>No more chasing confirmation messages or typing codes into a spreadsheet. GroupYetu360 works directly with Safaricom.</p></div>
       <ul class="checks">
@@ -416,9 +416,9 @@ footer{background:#120a0e;color:#cbbfc4;padding:70px 0 34px;margin-top:100px}
     <div class="app-actions reveal"><a class="play" href="https://play.google.com/store/apps/details?id=com.ephtechnologies.groupyetu360" target="_blank" rel="noopener"><svg width="26" height="28" viewBox="0 0 26 28" aria-hidden="true"><path d="M1.2 1.1 14.4 14 1.2 26.9c-.4-.3-.7-.9-.7-1.6V2.7c0-.7.3-1.3.7-1.6z" fill="#2196F3"/><path d="M18.9 9.5 14.4 14 1.2 1.1c.3-.2.6-.3 1-.3.4 0 .7.1 1.1.3z" fill="#4CAF50"/><path d="M18.9 18.5 3.3 27.6c-.4.2-.7.3-1.1.3-.4 0-.7-.1-1-.3L14.4 14z" fill="#F44336"/><path d="M24.3 14c0 .8-.4 1.5-1.1 1.9l-4.3 2.6-4.5-4.5 4.5-4.5 4.3 2.6c.7.4 1.1 1.1 1.1 1.9z" fill="#FFC107"/></svg><span><small>GET IT ON</small><strong>Google Play</strong></span></a><a class="btn btn-ghost-light" href="https://app.groupyetu.org">Open the web app</a></div>
     <p class="ios-note">On iPhone, open app.groupyetu.org in Safari and choose "Add to Home Screen".</p>
     <div class="app-row reveal" aria-hidden="true">
-      <img src="phone-admin.webp" alt="" width="520" height="1074" loading="lazy">
-      <img src="phone-member.webp" alt="" width="520" height="1074" loading="lazy">
-      <img src="phone-more.webp" alt="" width="520" height="1074" loading="lazy">
+      <img src="phone-admin.webp" alt="" width="760" height="1594" loading="lazy">
+      <img src="phone-member.webp" alt="" width="760" height="1594" loading="lazy">
+      <img src="phone-more.webp" alt="" width="760" height="1594" loading="lazy">
     </div>
   </div>
 </section>
@@ -485,7 +485,7 @@ footer{background:#120a0e;color:#cbbfc4;padding:70px 0 34px;margin-top:100px}
   <div class="wrap">
     <div class="foot">
       <div>
-        <a class="logo" href="#top" style="color:#fff"><svg width="34" height="34" viewBox="0 0 80 80" fill="none" aria-hidden="true"><circle cx="30" cy="28" r="24" stroke="#e0b84a" stroke-width="3.2" fill="rgba(224,184,74,0.15)"/><circle cx="50" cy="28" r="24" stroke="#e0b84a" stroke-width="3.2" fill="rgba(224,184,74,0.15)"/><circle cx="40" cy="50" r="24" stroke="#9fe1cb" stroke-width="3.2" fill="rgba(159,225,203,0.15)"/><circle cx="40" cy="36" r="6" fill="#1d9e75"/><circle cx="40" cy="36" r="3" fill="#9fe1cb"/></svg>GroupYetu<span>360</span></a>
+        <a class="logo" href="#top" style="color:#fff"><svg width="34" height="34" viewBox="0 0 80 80" fill="none" aria-hidden="true"><circle cx="30" cy="28" r="24" stroke="#e0b84a" stroke-width="3.2" fill="rgba(224,184,74,0.15)"/><circle cx="50" cy="28" r="24" stroke="#e0b84a" stroke-width="3.2" fill="rgba(224,184,74,0.15)"/><circle cx="40" cy="50" r="24" stroke="#9fe1cb" stroke-width="3.2" fill="rgba(159,225,203,0.15)"/><circle cx="40" cy="36" r="6" fill="#1d9e75"/><circle cx="40" cy="36" r="3" fill="#9fe1cb"/></svg><span class="wm">GroupYetu<span>360</span></span></a>
         <p>Group money, done right. The platform for chamas, welfare groups, SACCOs, investment clubs and community groups, built in Nairobi by EPH Technologies.</p>
         <a class="play" href="https://play.google.com/store/apps/details?id=com.ephtechnologies.groupyetu360" target="_blank" rel="noopener"><svg width="26" height="28" viewBox="0 0 26 28" aria-hidden="true"><path d="M1.2 1.1 14.4 14 1.2 26.9c-.4-.3-.7-.9-.7-1.6V2.7c0-.7.3-1.3.7-1.6z" fill="#2196F3"/><path d="M18.9 9.5 14.4 14 1.2 1.1c.3-.2.6-.3 1-.3.4 0 .7.1 1.1.3z" fill="#4CAF50"/><path d="M18.9 18.5 3.3 27.6c-.4.2-.7.3-1.1.3-.4 0-.7-.1-1-.3L14.4 14z" fill="#F44336"/><path d="M24.3 14c0 .8-.4 1.5-1.1 1.9l-4.3 2.6-4.5-4.5 4.5-4.5 4.3 2.6c.7.4 1.1 1.1 1.1 1.9z" fill="#FFC107"/></svg><span><small>GET IT ON</small><strong>Google Play</strong></span></a>
       </div>
