@@ -9,13 +9,13 @@
 <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover"/>
 <title>GroupYetu360 - Chama, SACCO and welfare group management in Kenya</title>
-<meta name="description" content="GroupYetu360 runs your chama, welfare group, SACCO or investment club: M-Pesa prompts for contributions, member records, merry-go-round, table banking, welfare and bulk SMS. Free to start, on Android and the web."/>
+<meta name="description" content="GroupYetu360 runs your chama, welfare group, SACCO or investment club: M-Pesa prompts for contributions, member records, merry-go-round, table banking, welfare and bulk SMS. Plus Michango for causes and tickets for your events. Free to start, on Android and the web."/>
 <meta name="keywords" content="chama management Kenya, chama app, merry go round app, welfare group app, SACCO app, table banking, investment club Kenya, M-Pesa contributions app, GroupYetu360"/>
 <meta name="author" content="EPH Technologies Limited"/>
 <meta name="robots" content="index, follow"/>
 <link rel="canonical" href="https://groupyetu.org"/>
-<meta property="og:title" content="GroupYetu360 - Your group's money, organised and accounted for"/>
-<meta property="og:description" content="Contributions by M-Pesa prompt, member records, welfare, merry-go-round and table banking in one app. Free to start."/>
+<meta property="og:title" content="GroupYetu360 - Your group, made easy"/>
+<meta property="og:description" content="Contributions by M-Pesa prompt, member records, welfare, merry-go-round and table banking in one app, plus Michango and event tickets. Free to start."/>
 <meta property="og:url" content="https://groupyetu.org"/>
 <meta property="og:type" content="website"/>
 <meta property="og:image" content="https://groupyetu.org/feature-graphic.png"/>
@@ -70,6 +70,8 @@ a{color:inherit}
 .nav-in{display:flex;align-items:center;gap:20px;height:72px}
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;font-size:19px;color:#fff;letter-spacing:-.01em}
 .logo .wm span{color:var(--gold-lt)}
+.mk{display:block;flex-shrink:0}.mk-l{display:none}
+.nav.solid .mk-d,.nav.open .mk-d{display:none}.nav.solid .mk-l,.nav.open .mk-l{display:block}
 .nav-links{display:flex;gap:4px;margin-left:auto}
 .nav-links a{padding:8px 12px;border-radius:10px;font-size:14.5px;font-weight:700;color:rgba(255,255,255,.88);text-decoration:none}
 .nav-links a:hover{background:rgba(255,255,255,.12);color:#fff}
@@ -126,6 +128,32 @@ section{padding:100px 0}
 .step b{display:flex;width:40px;height:40px;border-radius:12px;background:var(--ink);color:#fff;align-items:center;justify-content:center;font-size:17px;margin-bottom:18px}
 .step h3{font-size:19px;font-weight:800;margin-bottom:6px}
 .step p{color:var(--ink-faint);font-size:15.5px}
+
+
+/* Everyday services */
+.tone-violet{--tt-bg:#efeaf8;--tt-fg:#5b3fa0}.tone-orange{--tt-bg:#fdeee3;--tt-fg:#b4531a}.tone-blue{--tt-bg:#e6eefa;--tt-fg:#2a5596}
+.hero-new{display:inline-flex;align-items:center;gap:10px;margin-bottom:22px;padding:6px 14px 6px 6px;border-radius:999px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);color:#fff;text-decoration:none;font-size:14px;font-weight:700}
+.hero-new b{background:var(--gold-lt);color:#3a2a00;border-radius:999px;padding:3px 10px;font-size:12px;letter-spacing:.02em}
+.hero-new:hover{background:rgba(255,255,255,.2)}
+.svc{background:#fff}
+.svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.svc-card{background:var(--canvas);border-radius:24px;padding:28px;position:relative;overflow:hidden;display:flex;flex-direction:column}
+.svc-card::after{content:'';position:absolute;right:-60px;top:-70px;width:200px;height:200px;border-radius:50%;background:var(--tt-bg);opacity:.9}
+.svc-card > *{position:relative;z-index:1}
+.svc-top{display:flex;align-items:center;justify-content:space-between}
+.svc-tag{font-size:12.5px;font-weight:800;padding:5px 12px;border-radius:999px;background:var(--tt-fg);color:#fff}
+.svc-tag.soon{background:#fff;color:var(--tt-fg);border:1px solid var(--tt-bg)}
+.svc-card h3{font-size:22px;font-weight:800;letter-spacing:-.01em;margin:18px 0 8px}
+.svc-card p{font-size:15.5px;color:var(--ink-faint)}
+.svc-card ul{list-style:none;margin:18px 0 0;display:grid;gap:10px}
+.svc-card li{display:flex;gap:10px;align-items:flex-start;font-size:15px;font-weight:600}
+.svc-card li svg{color:var(--tt-fg);margin-top:3px;flex-shrink:0}
+.svc-fee{margin-top:auto;padding-top:22px;display:flex;flex-direction:column;gap:2px}
+.svc-fee strong{font-size:17px;color:var(--tt-fg)}
+.svc-fee span{font-size:13.5px;color:var(--ink-faint)}
+.svc-card.small h3{font-size:19px}
+.svc-card .ic{background:#fff;box-shadow:0 2px 8px rgba(16,40,32,.06)}
+@media(max-width:760px){.svc-grid{grid-template-columns:1fr}}
 
 /* Features bento */
 .feat{background:var(--canvas)}
@@ -236,6 +264,9 @@ footer{background:#120a0e;color:#cbbfc4;padding:70px 0 34px;margin-top:100px}
 .foot h4{color:#fff;font-size:15px;margin-bottom:12px}
 .foot a{display:block;text-decoration:none;font-size:14.5px;padding:4px 0;color:#cbbfc4}
 .foot a:hover{color:#fff}
+.foot .logo{display:flex}.foot .play{display:inline-flex}
+.nav-cta .btn{white-space:nowrap}
+.foot .addr{display:block;font-size:13.5px;line-height:1.5;padding:6px 0 4px;color:#a99aa1}
 .foot p{font-size:14.5px;margin:12px 0 18px;max-width:30em}
 .legal{border-top:1px solid rgba(255,255,255,.1);margin-top:40px;padding-top:22px;font-size:13px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
@@ -346,9 +377,9 @@ footer{background:#120a0e;color:#cbbfc4;padding:70px 0 34px;margin-top:100px}
 <a class="skip" href="#main">Skip to content</a>
 <header class="nav" id="nav">
   <div class="wrap nav-in">
-    <a class="logo" href="#top"><svg width="34" height="34" viewBox="0 0 80 80" fill="none" aria-hidden="true"><circle cx="30" cy="28" r="24" stroke="#e0b84a" stroke-width="3.2" fill="rgba(224,184,74,0.15)"/><circle cx="50" cy="28" r="24" stroke="#e0b84a" stroke-width="3.2" fill="rgba(224,184,74,0.15)"/><circle cx="40" cy="50" r="24" stroke="#9fe1cb" stroke-width="3.2" fill="rgba(159,225,203,0.15)"/><circle cx="40" cy="36" r="6" fill="#1d9e75"/><circle cx="40" cy="36" r="3" fill="#9fe1cb"/></svg><span class="wm">GroupYetu<span>360</span></span></a>
+    <a class="logo" href="#top"><img class="mk mk-d" src="gy360-mark-3d-dark.svg" width="36" height="36" alt=""><img class="mk mk-l" src="gy360-mark-3d-light.svg" width="36" height="36" alt=""><span class="wm">GroupYetu<span>360</span></span></a>
     <nav class="nav-links" aria-label="Main">
-      <a href="#features">Features</a><a href="#mpesa">M-Pesa</a><a href="#taya">Taya AI</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a href="blog.html">Blog</a>
+      <a href="#features">Features</a><a href="#services">Services</a><a href="#mpesa">M-Pesa</a><a href="#taya">Taya AI</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a href="blog.html">Blog</a>
     </nav>
     <div class="nav-cta">
       <a class="btn btn-ghost-light" href="https://app.groupyetu.org">Sign in</a>
@@ -363,7 +394,8 @@ footer{background:#120a0e;color:#cbbfc4;padding:70px 0 34px;margin-top:100px}
   <span class="glow g1"></span><span class="glow g2"></span>
   <div class="wrap hero-grid">
     <div class="hero-copy">
-      <h1>Your group's money, organised and accounted for.</h1>
+      <a class="hero-new" href="#services"><b>New</b>Michango and event tickets</a>
+      <h1>Your group, made easy.</h1>
       <p class="hero-lede">Contributions, welfare, merry-go-round and table banking in one place. Members pay with an M-Pesa prompt, every shilling is recorded, and everyone sees their own balance.</p>
       <div class="hero-actions">
         <a class="play" href="https://play.google.com/store/apps/details?id=com.ephtechnologies.groupyetu360" target="_blank" rel="noopener"><svg width="26" height="28" viewBox="0 0 26 28" aria-hidden="true"><path d="M1.2 1.1 14.4 14 1.2 26.9c-.4-.3-.7-.9-.7-1.6V2.7c0-.7.3-1.3.7-1.6z" fill="#2196F3"/><path d="M18.9 9.5 14.4 14 1.2 1.1c.3-.2.6-.3 1-.3.4 0 .7.1 1.1.3z" fill="#4CAF50"/><path d="M18.9 18.5 3.3 27.6c-.4.2-.7.3-1.1.3-.4 0-.7-.1-1-.3L14.4 14z" fill="#F44336"/><path d="M24.3 14c0 .8-.4 1.5-1.1 1.9l-4.3 2.6-4.5-4.5 4.5-4.5 4.3 2.6c.7.4 1.1 1.1 1.1 1.9z" fill="#FFC107"/></svg><span><small>GET IT ON</small><strong>Google Play</strong></span></a>
@@ -438,6 +470,46 @@ footer{background:#120a0e;color:#cbbfc4;padding:70px 0 34px;margin-top:100px}
         <li><span class="ic tone-gold"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6"/></svg></span><div><strong>Recorded the moment it lands</strong><span>The payment, the M-Pesa receipt and the member's new balance appear straight away.</span></div></li>
         <li><span class="ic tone-maroon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span><div><strong>Sent on to your group's account</strong><span>Money goes to your paybill, till or the treasurer's number, once your account is approved.</span></div></li>
       </ul>
+    </div>
+  </div>
+</section>
+
+<section class="svc" id="services">
+  <div class="wrap">
+    <div class="sec-head reveal"><h2>Everyday services, in the same app</h2><p>Beyond your group's books: raise money for a cause, sell tickets to your event, and soon top up airtime and data.</p></div>
+    <div class="svc-grid">
+      <article class="svc-card tone-violet reveal" style="--d:0">
+        <div class="svc-top"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.5 4.5 0 0 1 12 7.2 4.5 4.5 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/><path d="M12 10v5M9.5 12.5h5"/></svg></span><span class="svc-tag">Available now</span></div>
+        <h3>Michango: raise money for any cause</h3>
+        <p>Medical bills, funerals, school fees, church and community projects. Share one link, and anyone can give by M-Pesa, with or without the app.</p>
+        <ul>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>A page for your cause, with progress as gifts come in</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Every gift recorded, and each giver thanked by SMS</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Withdraw to your M-Pesa with a one-time SMS code</li>
+        </ul>
+        <div class="svc-fee"><strong>2.5% fee</strong><span>M-Pesa charges included. Organisers verify their identity first.</span></div>
+      </article>
+      <article class="svc-card tone-orange reveal" style="--d:1">
+        <div class="svc-top"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8a2 2 0 0 0 2-2h14a2 2 0 0 0 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 0-2 2H5a2 2 0 0 0-2-2v-2a2 2 0 0 0 0-4z"/><path d="M14 6v12" stroke-dasharray="2 2.5"/></svg></span><span class="svc-tag">Available now</span></div>
+        <h3>Event tickets: sell tickets to any event</h3>
+        <p>Concerts, dinners, conferences, trips, sport, church and school events. Run it as your group, as yourself or as a business.</p>
+        <ul>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Free and paid tickets on your own event page</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Buyers pay by M-Pesa and get QR tickets by SMS</li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Check people in at the door with your phone camera</li>
+        </ul>
+        <div class="svc-fee"><strong>3.5% per paid ticket</strong><span>M-Pesa charges included. Free tickets cost nothing.</span></div>
+      </article>
+      <article class="svc-card small tone-teal reveal" style="--d:2">
+        <div class="svc-top"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/><path d="M10 8h4M12 6v4"/></svg></span><span class="svc-tag soon">Coming soon</span></div>
+        <h3>Airtime and data</h3>
+        <p>Top up airtime and data bundles for yourself or anyone, paid by M-Pesa.</p>
+      </article>
+      <article class="svc-card small tone-blue reveal" style="--d:3">
+        <div class="svc-top"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg></span><span class="svc-tag soon">Coming soon</span></div>
+        <h3>Travel eSIM</h3>
+        <p>Stay connected abroad: a data eSIM for over 150 countries, set up in a minute.</p>
+      </article>
     </div>
   </div>
 </section>
@@ -521,7 +593,10 @@ footer{background:#120a0e;color:#cbbfc4;padding:70px 0 34px;margin-top:100px}
       <details class="reveal" style="--d:3"><summary>Is our group's money and data safe?</summary><p>Your records are encrypted in storage and in transit, and each group can only ever see its own data. Payments go through Safaricom, and every change in the books is logged. We comply with Kenya's Data Protection Act, 2019.</p></details>
       <details class="reveal" style="--d:4"><summary>We already keep records in Excel. Can we bring them in?</summary><p>Yes. You can import your member list, and our team can help move your existing contributions and balances across so you start with complete records.</p></details>
       <details class="reveal" style="--d:5"><summary>How does bulk SMS work?</summary><p>Buy SMS credits in bundles from within the app whenever you need them. Credits never expire. Send reminders to everyone, to active members, or only to those behind on payments.</p></details>
-      <details class="reveal" style="--d:6"><summary>What happens when the free trial ends?</summary><p>Your group returns to the Starter limits unless you choose a plan. Nothing is charged automatically, your records are kept, and you get reminders before the trial ends.</p></details>
+      <details class="reveal" style="--d:6"><summary>What is Michango, and what does it cost?</summary><p>Michango lets anyone raise money for a cause through a page they share by link. Givers pay by M-Pesa prompt and do not need the app. The fee is 2.5% of what is raised, and it already covers the M-Pesa charges on your withdrawal. To keep givers safe, every organiser verifies their identity with their ID before their cause goes live.</p></details>
+      <details class="reveal" style="--d:7"><summary>How do event tickets work?</summary><p>Create your event, set free or paid ticket types and share the event page. Buyers pay by M-Pesa and receive their tickets by SMS, each with a QR code you scan at the door. Paid tickets carry a 3.5% fee, M-Pesa charges included. For a group's event, the money goes to the group's account as each ticket sells; for a person or business, it can be withdrawn once the event starts.</p></details>
+      <details class="reveal" style="--d:8"><summary>Can I hide my balance when other people can see my screen?</summary><p>Yes. Tap the eye button next to your balance and the figures are blurred on that phone or computer until you show them again.</p></details>
+      <details class="reveal" style="--d:9"><summary>What happens when the free trial ends?</summary><p>Your group returns to the Starter limits unless you choose a plan. Nothing is charged automatically, your records are kept, and you get reminders before the trial ends.</p></details>
     </div>
   </div>
 </section>
@@ -539,15 +614,15 @@ footer{background:#120a0e;color:#cbbfc4;padding:70px 0 34px;margin-top:100px}
   <div class="wrap">
     <div class="foot">
       <div>
-        <a class="logo" href="#top" style="color:#fff"><svg width="34" height="34" viewBox="0 0 80 80" fill="none" aria-hidden="true"><circle cx="30" cy="28" r="24" stroke="#e0b84a" stroke-width="3.2" fill="rgba(224,184,74,0.15)"/><circle cx="50" cy="28" r="24" stroke="#e0b84a" stroke-width="3.2" fill="rgba(224,184,74,0.15)"/><circle cx="40" cy="50" r="24" stroke="#9fe1cb" stroke-width="3.2" fill="rgba(159,225,203,0.15)"/><circle cx="40" cy="36" r="6" fill="#1d9e75"/><circle cx="40" cy="36" r="3" fill="#9fe1cb"/></svg><span class="wm">GroupYetu<span>360</span></span></a>
-        <p>Group money, done right. The platform for chamas, welfare groups, SACCOs, investment clubs and community groups, built in Nairobi by EPH Technologies.</p>
+        <a class="logo" href="#top" style="color:#fff"><img class="mk" src="gy360-mark-3d-dark.svg" width="36" height="36" alt=""><span class="wm">GroupYetu<span>360</span></span></a>
+        <p>Your group, made easy. The platform for chamas, welfare groups, SACCOs, investment clubs and community groups, built in Nairobi by EPH Technologies.</p>
         <a class="play" href="https://play.google.com/store/apps/details?id=com.ephtechnologies.groupyetu360" target="_blank" rel="noopener"><svg width="26" height="28" viewBox="0 0 26 28" aria-hidden="true"><path d="M1.2 1.1 14.4 14 1.2 26.9c-.4-.3-.7-.9-.7-1.6V2.7c0-.7.3-1.3.7-1.6z" fill="#2196F3"/><path d="M18.9 9.5 14.4 14 1.2 1.1c.3-.2.6-.3 1-.3.4 0 .7.1 1.1.3z" fill="#4CAF50"/><path d="M18.9 18.5 3.3 27.6c-.4.2-.7.3-1.1.3-.4 0-.7-.1-1-.3L14.4 14z" fill="#F44336"/><path d="M24.3 14c0 .8-.4 1.5-1.1 1.9l-4.3 2.6-4.5-4.5 4.5-4.5 4.3 2.6c.7.4 1.1 1.1 1.1 1.9z" fill="#FFC107"/></svg><span><small>GET IT ON</small><strong>Google Play</strong></span></a>
       </div>
-      <div><h4>Product</h4><a href="#features">Features</a><a href="#mpesa">M-Pesa payments</a><a href="#taya">Taya AI</a><a href="#pricing">Pricing</a><a href="https://play.google.com/store/apps/details?id=com.ephtechnologies.groupyetu360" target="_blank" rel="noopener">Android app</a><a href="https://app.groupyetu.org">Sign in</a></div>
+      <div><h4>Product</h4><a href="#features">Features</a><a href="#services">Michango and tickets</a><a href="#mpesa">M-Pesa payments</a><a href="#taya">Taya AI</a><a href="#pricing">Pricing</a><a href="https://play.google.com/store/apps/details?id=com.ephtechnologies.groupyetu360" target="_blank" rel="noopener">Android app</a><a href="https://app.groupyetu.org">Sign in</a></div>
       <div><h4>Learn</h4><a href="blog.html">Blog</a><a href="#faq">FAQ</a><a href="blog-start-community-group-kenya.html">Starting a group</a><a href="blog-merry-go-round-table-banking-explained.html">Merry-go-round and table banking</a></div>
-      <div><h4>Contact</h4><a href="https://wa.me/254702903544?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20GroupYetu360" target="_blank" rel="noopener">WhatsApp +254 702 903 544</a><a href="mailto:info@groupyetu.org">info@groupyetu.org</a><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of service</a></div>
+      <div><h4>Contact</h4><a href="https://wa.me/254702903544?text=Hi%2C%20I%27d%20like%20to%20know%20more%20about%20GroupYetu360" target="_blank" rel="noopener">WhatsApp +254 702 903 544</a><a href="mailto:info@groupyetu.org">info@groupyetu.org</a><span class="addr">Western Heights, 8th Floor<br>Karuna Road, Westlands, Nairobi</span><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of service</a></div>
     </div>
-    <div class="legal"><span>&copy; <span id="yr">2026</span> EPH Technologies Limited, Westlands, Nairobi</span><span>Built for Kenyan communities</span></div>
+    <div class="legal"><span>&copy; <span id="yr">2026</span> EPH Technologies Limited, Western Heights, Westlands, Nairobi</span><span>Built for Kenyan communities</span></div>
   </div>
 </footer>
 
