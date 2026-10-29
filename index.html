@@ -205,6 +205,9 @@ section{padding:100px 0}
 .app{background:var(--brand-grad);color:#fff;position:relative;overflow:hidden;padding-bottom:0}
 .app::before{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.07) 1px,transparent 1px);background-size:22px 22px}
 .app .sec-head p{color:#f3dde3}
+.app-cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;margin-top:34px}
+.app-cards img{width:100%;height:auto;border-radius:22px;box-shadow:0 0 0 1px rgba(255,255,255,.14),0 24px 50px rgba(20,0,8,.35)}
+@media(max-width:900px){.app-cards{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;padding-bottom:12px;margin-inline:-20px;padding-inline:20px}.app-cards img{flex:0 0 62%;scroll-snap-align:center}}
 .app-row{position:relative;display:flex;justify-content:center;gap:26px;margin-top:20px;height:470px;overflow:hidden}
 .app-row img{width:250px;filter:drop-shadow(0 30px 50px rgba(20,0,8,.45))}
 .app-row img:nth-child(2){margin-top:-30px}
@@ -394,7 +397,7 @@ footer{background:#120a0e;color:#cbbfc4;padding:70px 0 34px;margin-top:100px}
   <span class="glow g1"></span><span class="glow g2"></span>
   <div class="wrap hero-grid">
     <div class="hero-copy">
-      <a class="hero-new" href="#services"><b>New</b>Michango and event tickets</a>
+      <a class="hero-new" href="#services"><b>New</b>Airtime, Michango and event tickets</a>
       <h1>Your group, made easy.</h1>
       <p class="hero-lede">Contributions, welfare, merry-go-round and table banking in one place. Members pay with an M-Pesa prompt, every shilling is recorded, and everyone sees their own balance.</p>
       <div class="hero-actions">
@@ -404,11 +407,11 @@ footer{background:#120a0e;color:#cbbfc4;padding:70px 0 34px;margin-top:100px}
       <p class="hero-note">Free for groups of up to 15. Paid plans start with 60 days free.</p>
     </div>
     <div class="hero-phones" aria-hidden="true">
-      <div class="ph-slot p1"><div class="ph-float"><img src="phone-admin.webp" alt="" width="760" height="1594" loading="eager"></div></div>
+      <div class="ph-slot p1"><div class="ph-float"><img src="phone-admin-v2.webp" alt="" width="760" height="1594" loading="eager"></div></div>
       <div class="ph-slot p2"><div class="ph-float"><div class="ph-cycle" id="heroCycle">
-        <img class="on" src="phone-member.webp" alt="" width="760" height="1594" loading="eager">
-        <img src="phone-money.webp" alt="" width="760" height="1594" loading="lazy">
-        <img src="phone-more.webp" alt="" width="760" height="1594" loading="lazy">
+        <img class="on" src="phone-services-v2.webp" alt="" width="760" height="1594" loading="eager">
+        <img src="phone-member-v2.webp" alt="" width="760" height="1594" loading="lazy">
+        <img src="phone-money-v2.webp" alt="" width="760" height="1594" loading="lazy">
       </div></div></div>
     </div>
   </div>
@@ -447,7 +450,7 @@ footer{background:#120a0e;color:#cbbfc4;padding:70px 0 34px;margin-top:100px}
   <div class="wrap">
     <div class="sec-head reveal"><h2>Everything a group treasurer juggles, in one app</h2><p>Retire the WhatsApp screenshots, the exercise book and the spreadsheet only one person understands.</p></div>
     <div class="bento">
-      <div class="card big span4 reveal"><div class="ctext"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="20" height="13" rx="2"/><circle cx="12" cy="12.5" r="2.5"/><path d="M6 10v5M18 10v5"/></svg></span><h3>Contributions and finance</h3><p>Savings, shares, monthly dues, expenses and other income, with the group balance and every member's balance always up to date. Monthly charts show what has come in, and who is behind.</p></div><img src="phone-money.webp" alt="The Money screen showing a year's collections" width="760" height="1594" loading="lazy"></div>
+      <div class="card big span4 reveal"><div class="ctext"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="6" width="20" height="13" rx="2"/><circle cx="12" cy="12.5" r="2.5"/><path d="M6 10v5M18 10v5"/></svg></span><h3>Contributions and finance</h3><p>Savings, shares, monthly dues, expenses and other income, with the group balance and every member's balance always up to date. Monthly charts show what has come in, and who is behind.</p></div><img src="phone-money-v2.webp" alt="The Money screen showing a year's collections" width="760" height="1594" loading="lazy"></div>
       <div class="card span2 tone-teal reveal" style="--d:0"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.6 3.4-5.5 6.5-5.5s5.7 1.9 6.5 5.5"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8M18.5 14.8c1.6.8 2.6 2.5 3 5.2"/></svg></span><h3>Member register</h3><p>Every member with their number, status, phone and full payment history. Find anyone in seconds.</p></div>
       <div class="card span2 tone-gold reveal" style="--d:1"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 0 1 15.4-6.4L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-15.4 6.4L3 16"/><path d="M3 21v-5h5"/></svg></span><h3>Merry-go-round</h3><p>Rounds, turns and payouts, so nobody wonders whose turn is next or how much was collected.</p></div>
       <div class="card span2 tone-maroon reveal" style="--d:2"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.5 4.5 0 0 1 12 7.2 4.5 4.5 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></svg></span><h3>Welfare</h3><p>Open a fund for a bereavement or celebration, set the amount per member and see who has given.</p></div>
@@ -462,7 +465,7 @@ footer{background:#120a0e;color:#cbbfc4;padding:70px 0 34px;margin-top:100px}
 
 <section id="mpesa">
   <div class="wrap mpesa-grid">
-    <div class="mpesa-phone reveal"><img src="phone-member.webp" alt="A member's home screen with a Pay with M-Pesa button" width="760" height="1594" loading="lazy"></div>
+    <div class="mpesa-phone reveal"><img src="phone-member-v2.webp" alt="A member's home screen with a Pay with M-Pesa button" width="760" height="1594" loading="lazy"></div>
     <div class="reveal">
       <div class="sec-head" style="margin-bottom:0"><h2>Members pay with an M-Pesa prompt. The record keeps itself.</h2><p>No more chasing confirmation messages or typing codes into a spreadsheet. GroupYetu360 works directly with Safaricom.</p></div>
       <ul class="checks">
@@ -476,7 +479,7 @@ footer{background:#120a0e;color:#cbbfc4;padding:70px 0 34px;margin-top:100px}
 
 <section class="svc" id="services">
   <div class="wrap">
-    <div class="sec-head reveal"><h2>Everyday services, in the same app</h2><p>Beyond your group's books: raise money for a cause, sell tickets to your event, and soon top up airtime and data.</p></div>
+    <div class="sec-head reveal"><h2>Everyday services, in the same app</h2><p>Beyond your group's books: buy airtime at 2% off, raise money for a cause and sell tickets to your event.</p></div>
     <div class="svc-grid">
       <article class="svc-card tone-violet reveal" style="--d:0">
         <div class="svc-top"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.5 4.5 0 0 1 12 7.2 4.5 4.5 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/><path d="M12 10v5M9.5 12.5h5"/></svg></span><span class="svc-tag">Available now</span></div>
@@ -501,9 +504,9 @@ footer{background:#120a0e;color:#cbbfc4;padding:70px 0 34px;margin-top:100px}
         <div class="svc-fee"><strong>3.5% per paid ticket</strong><span>M-Pesa charges included. Free tickets cost nothing.</span></div>
       </article>
       <article class="svc-card small tone-teal reveal" style="--d:2">
-        <div class="svc-top"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/><path d="M10 8h4M12 6v4"/></svg></span><span class="svc-tag soon">Coming soon</span></div>
-        <h3>Airtime and data</h3>
-        <p>Top up airtime and data bundles for yourself or anyone, paid by M-Pesa.</p>
+        <div class="svc-top"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/><path d="M10 8h4M12 6v4"/></svg></span><span class="svc-tag">Available now</span></div>
+        <h3>Airtime at 2% off</h3>
+        <p>Top up any Kenyan number, yours or someone else's, and pay 2% less by M-Pesa. Data bundles are coming next.</p>
       </article>
       <article class="svc-card small tone-blue reveal" style="--d:3">
         <div class="svc-top"><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg></span><span class="svc-tag soon">Coming soon</span></div>
@@ -541,10 +544,11 @@ footer{background:#120a0e;color:#cbbfc4;padding:70px 0 34px;margin-top:100px}
     <div class="sec-head center reveal"><h2>Now on Google Play</h2><p>The full GroupYetu360 experience in an app made for your phone: a bright home screen, a pay button where your thumb is, and your group's books in your pocket.</p></div>
     <div class="app-actions reveal"><a class="play" href="https://play.google.com/store/apps/details?id=com.ephtechnologies.groupyetu360" target="_blank" rel="noopener"><svg width="26" height="28" viewBox="0 0 26 28" aria-hidden="true"><path d="M1.2 1.1 14.4 14 1.2 26.9c-.4-.3-.7-.9-.7-1.6V2.7c0-.7.3-1.3.7-1.6z" fill="#2196F3"/><path d="M18.9 9.5 14.4 14 1.2 1.1c.3-.2.6-.3 1-.3.4 0 .7.1 1.1.3z" fill="#4CAF50"/><path d="M18.9 18.5 3.3 27.6c-.4.2-.7.3-1.1.3-.4 0-.7-.1-1-.3L14.4 14z" fill="#F44336"/><path d="M24.3 14c0 .8-.4 1.5-1.1 1.9l-4.3 2.6-4.5-4.5 4.5-4.5 4.3 2.6c.7.4 1.1 1.1 1.1 1.9z" fill="#FFC107"/></svg><span><small>GET IT ON</small><strong>Google Play</strong></span></a><a class="btn btn-ghost-light" href="https://app.groupyetu.org">Open the web app</a></div>
     <p class="ios-note">On iPhone, open app.groupyetu.org in Safari and choose "Add to Home Screen".</p>
-    <div class="app-row reveal" id="appRow" aria-hidden="true">
-      <img src="phone-admin.webp" alt="" width="760" height="1594" loading="lazy">
-      <img src="phone-member.webp" alt="" width="760" height="1594" loading="lazy">
-      <img src="phone-more.webp" alt="" width="760" height="1594" loading="lazy">
+    <div class="app-cards reveal" role="list" aria-label="Screens from the app">
+      <img role="listitem" src="app-card-services.webp" alt="Everyday services: airtime, Michango and event tickets in the app" width="720" height="1280" loading="lazy">
+      <img role="listitem" src="app-card-pay.webp" alt="Pay with an M-Pesa prompt, and hide your balance with one tap" width="720" height="1280" loading="lazy">
+      <img role="listitem" src="app-card-admin.webp" alt="For treasurers: see who has paid at a glance" width="720" height="1280" loading="lazy">
+      <img role="listitem" src="app-card-money.webp" alt="Your group's money month by month, in dark mode" width="720" height="1280" loading="lazy">
     </div>
   </div>
 </section>
