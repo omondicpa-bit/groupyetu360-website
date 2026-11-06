@@ -179,19 +179,13 @@ section{padding:100px 0}
 .mpesa-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
 .mpesa-phone{background:var(--teal-pale);border-radius:32px;display:flex;justify-content:center;padding:50px 0 0;overflow:hidden;height:560px}
 .mpesa-phone img{width:300px;filter:drop-shadow(0 30px 50px rgba(15,110,86,.3))}
+.mpesa-video{padding:0;align-items:center}
+.mpesa-video video{display:block;height:calc(100% - 40px);width:auto;aspect-ratio:9/16;border-radius:24px;background:#faf5ea;box-shadow:0 30px 50px -20px rgba(15,110,86,.35)}
 .checks{list-style:none;margin-top:26px;display:grid;gap:16px}
 .checks li{display:flex;gap:14px;align-items:flex-start}
 .checks li .ic{width:38px;height:38px;border-radius:12px}
 .checks strong{display:block;font-size:16px}
 .checks span{color:var(--ink-faint);font-size:15px}
-.howpay-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
-.howpay-video{background:linear-gradient(160deg,#e3f1ec,#cfe7dd);border-radius:32px;display:flex;justify-content:center;align-items:center;padding:36px 0;min-height:600px}
-.howpay-video video{display:block;width:300px;aspect-ratio:9/16;height:auto;border-radius:26px;background:#faf5ea;box-shadow:0 30px 60px -24px rgba(90,40,10,.35)}
-.howpay-steps{list-style:none;margin-top:26px;display:grid;gap:18px;counter-reset:hp}
-.howpay-steps li{display:flex;gap:14px;align-items:flex-start;counter-increment:hp}
-.howpay-steps li::before{content:counter(hp);flex:0 0 38px;height:38px;border-radius:12px;background:#e3f1ec;color:#0b5a46;font-weight:800;display:flex;align-items:center;justify-content:center}
-.howpay-steps strong{display:block;font-size:16px}
-.howpay-steps span{color:var(--ink-faint);font-size:15px}
 
 /* Taya */
 .taya{background:#120a0e;color:#fff;position:relative;overflow:hidden}
@@ -296,7 +290,7 @@ footer{background:#120a0e;color:#cbbfc4;padding:70px 0 34px;margin-top:100px}
   .nav.open .nav-links{display:flex;position:absolute;top:72px;left:0;right:0;flex-direction:column;background:#fff;padding:10px 20px 20px;box-shadow:0 20px 30px rgba(0,0,0,.1)}
   .nav.open .nav-links a{color:var(--ink);padding:14px 4px;border-bottom:1px solid var(--border);border-radius:0}
   .hero{padding-top:110px}
-  .hero-grid,.mpesa-grid,.howpay-grid,.taya-grid,.cta{grid-template-columns:1fr}
+  .hero-grid,.mpesa-grid,.taya-grid,.cta{grid-template-columns:1fr}
   .hero-copy{padding-bottom:20px}
   .hero-phones{height:480px}
   .trust{grid-template-columns:1fr 1fr}
@@ -477,7 +471,7 @@ footer{background:#120a0e;color:#cbbfc4;padding:70px 0 34px;margin-top:100px}
 
 <section id="mpesa">
   <div class="wrap mpesa-grid">
-    <div class="mpesa-phone reveal"><img src="phone-member-v2.webp" alt="A member's home screen with a Pay with M-Pesa button" width="760" height="1594" loading="lazy"></div>
+    <div class="mpesa-phone mpesa-video reveal"><video id="howPayVideo" muted loop playsinline preload="none" poster="how-members-pay-poster.webp" width="720" height="1280" aria-label="A member pays a contribution with an M-Pesa prompt, step by step, using a demo group"><source src="how-members-pay.mp4" type="video/mp4"></video></div>
     <div class="reveal">
       <div class="sec-head" style="margin-bottom:0"><h2>Members pay with an M-Pesa prompt. The record keeps itself.</h2><p>No more chasing confirmation messages or typing codes into a spreadsheet. GroupYetu360 works directly with Safaricom.</p></div>
       <ul class="checks">
@@ -485,25 +479,6 @@ footer{background:#120a0e;color:#cbbfc4;padding:70px 0 34px;margin-top:100px}
         <li><span class="ic tone-gold"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6"/></svg></span><div><strong>Recorded the moment it lands</strong><span>The payment, the M-Pesa receipt and the member's new balance appear straight away.</span></div></li>
         <li><span class="ic tone-maroon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg></span><div><strong>Sent on to your group's account</strong><span>Money goes to your paybill, till or the treasurer's number, once your account is approved.</span></div></li>
       </ul>
-    </div>
-  </div>
-</section>
-
-<section id="how-it-works" style="padding-top:20px">
-  <div class="wrap howpay-grid">
-    <div class="reveal">
-      <div class="sec-head" style="margin-bottom:0"><h2>See a payment from start to finish</h2><p>Thirty seconds, from the member's home screen to the treasurer's records. Shown here with a demo group.</p></div>
-      <ol class="howpay-steps">
-        <li><div><strong>Tap Pay with M-Pesa</strong><span>The month's contribution is waiting on the member's home screen.</span></div></li>
-        <li><div><strong>Choose what you are paying for</strong><span>Savings and welfare in one payment, with the fee shown before you pay.</span></div></li>
-        <li><div><strong>Enter your M-Pesa PIN</strong><span>The prompt comes to your phone. No paybill numbers to type.</span></div></li>
-        <li><div><strong>Recorded the moment it lands</strong><span>An app alert and an SMS confirm it, and the treasurer sees it too.</span></div></li>
-      </ol>
-    </div>
-    <div class="howpay-video reveal">
-      <video id="howPayVideo" muted loop playsinline preload="none" poster="how-members-pay-poster.webp" width="720" height="1280" aria-label="A member pays a contribution with an M-Pesa prompt, step by step, using a demo group">
-        <source src="how-members-pay.mp4" type="video/mp4">
-      </video>
     </div>
   </div>
 </section>
