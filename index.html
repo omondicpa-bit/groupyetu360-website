@@ -671,5 +671,6 @@ function upd(){ticking=false;const vh=innerHeight;
  if(mp){const r=mp.parentElement.getBoundingClientRect();const p=Math.max(-1,Math.min(1,(r.top+r.height/2-vh/2)/vh));mp.style.transform=`translateY(${p*50}px) rotate(${p*-3}deg)`;}}
 addEventListener('scroll',()=>{if(!ticking){ticking=true;requestAnimationFrame(upd);}},{passive:true});upd();})();
 </script>
+<script src="track.js?v=1" defer></script>
 </body>
 </html>
