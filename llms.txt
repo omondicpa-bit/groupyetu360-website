@@ -1,0 +1,59 @@
+# GroupYetu360
+
+> GroupYetu360 is a Kenyan app for running chamas, welfare groups, SACCOs, investment clubs, merry-go-rounds, table banking groups and other community groups. Members pay by M-Pesa prompt, each payment is recorded against their name automatically, and every member sees their own balance on their phone. It is built in Nairobi by EPH Technologies Limited.
+
+## What it does
+
+- Contributions and finance: savings, shares, monthly dues, expenses and other income, with the group balance and each member's balance kept up to date.
+- M-Pesa built in: members receive an M-Pesa prompt, enter their PIN with Safaricom, and the payment, receipt and new balance appear straight away. No typing of M-Pesa codes.
+- The group keeps its money: each payment is settled into the group's own paybill, till or bank account as it arrives. GroupYetu360 keeps the record and never holds the group's money. There is no app wallet to load.
+- Member register and member portals: each member logs in and sees only their own payments, balances and welfare history. Officials see the whole group.
+- Merry-go-round: rounds, turns and payouts.
+- Welfare: funds for bereavements or celebrations, with the amount per member and who has given.
+- Table banking and loans: pools, loans, repayments and interest for each borrower.
+- Meetings and minutes: scheduling, attendance on a phone, and filed minutes.
+- Projects and investments: land, livestock and businesses the group owns.
+- Approvals and audit trail: payments members report are checked before they count, and every change is logged.
+- Bulk SMS reminders, pay as you go; credits never expire.
+- Taya, a built-in assistant that drafts minutes and reminders and answers questions about the group's records.
+- Excel import of member lists, with help moving existing records across.
+
+## Everyday services in the same app
+
+- Michango: a shareable page to raise money for a cause (medical bills, funerals, school fees, church or community projects). Anyone can give by M-Pesa without the app. Fee 2.5%, M-Pesa charges included. Organisers verify their ID first.
+- Event tickets: free and paid tickets with QR codes sent by email, checked in at the door with a phone camera. Fee 3.5% per paid ticket, M-Pesa charges included.
+- Airtime for any Kenyan number at 2% off.
+
+## Pricing (Kenya shillings)
+
+- Starter: free forever, up to 15 members.
+- Basic: Ksh 3,000 a year, up to 30 members, adds welfare, projects and table banking.
+- Standard: Ksh 6,000 a year, up to 75 members, adds M-Pesa prompts with automatic recording.
+- Pro: Ksh 12,000 a year, unlimited members, for SACCOs and large associations.
+- Every paid plan starts with 60 days free. No card is needed, and nothing is charged automatically.
+
+## Where it works
+
+- Android: on Google Play (search "GroupYetu360").
+- iPhone: open app.groupyetu.org in Safari and choose "Add to Home Screen".
+- Computer or tablet: app.groupyetu.org in any browser.
+- Made for groups in Kenya, including diaspora groups whose members live abroad but contribute to a Kenyan group.
+
+## Privacy and security
+
+- Complies with Kenya's Data Protection Act, 2019.
+- Each group sees only its own data; members see only their own records.
+- GroupYetu360 never sees anyone's M-Pesa PIN.
+- Before instant M-Pesa payments open for a group, the account the money goes to is verified.
+
+## Links
+
+- Website: https://groupyetu.org
+- Start free: https://app.groupyetu.org
+- Get the app: https://app.groupyetu.org/get
+- Questions groups ask: https://groupyetu.org/#faq
+- Blog and guides: https://groupyetu.org/blog.html
+- Free chama constitution template: https://groupyetu.org/chama-constitution.html
+- SACCO vs chama vs welfare group: https://groupyetu.org/blog-sacco-vs-chama-vs-welfare-group.html
+- Contact: info@groupyetu.org, or WhatsApp from the website
+- Office: Western Heights, 8th Floor, Karuna Road, Westlands, Nairobi
